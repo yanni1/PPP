@@ -14,7 +14,7 @@ t0 = time.time()
 #Velocity Porfile   
 v = p.vmax * (1 - 0.5*(((p.x-(p.Lx/2))/p.Lx)**2))
 
-nt = p.nt    
+nt = p.nt
 def calc(nt=nt):
     t2 = time.time()
     C_O2 = np.zeros((p.ny,p.nx)) #make conc matrix
