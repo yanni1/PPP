@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-
-"""
-## Python (sub)module Animation
-"""
-
 # Animation update function
 from calc import calc
 import matplotlib.pyplot as plt
