@@ -1,6 +1,11 @@
 project(Conc_Calc_CPP)
 cmake_minimum_required(VERSION 3.18...3.22)
-find_package(Python 3.8 COMPONENTS Interpreter Development.Module REQUIRED) # minimal python is 3.8
+#set(Python_EXECUTABLE "/Users/yanni/.pyenv/versions/3.12.2/bin/python")
+find_package(Python 3.12.2 COMPONENTS Interpreter Development.Module REQUIRED) # minimal python is 3.8
+message(STATUS "Python found: ${Python_EXECUTABLE}")
+message(STATUS "Python version: ${Python_VERSION}")
+message(STATUS "Python include dir: ${Python_INCLUDE_DIRS}")
+message(STATUS "Python library: ${Python_LIBRARIES}")
 
 # Configure CMake to perform an optimized release build by default unless another build type is specified.
 if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
@@ -14,6 +19,8 @@ execute_process(
   OUTPUT_STRIP_TRAILING_WHITESPACE OUTPUT_VARIABLE NB_DIR)
 list(APPEND CMAKE_PREFIX_PATH "${NB_DIR}")
 find_package(nanobind CONFIG REQUIRED)
+message(STATUS "Nanobind directory found: ${NB_DIR}")
+message(STATUS "CMAKE_PREFIX_PATH includes: ${CMAKE_PREFIX_PATH}")
 
 # Create the module
 nanobind_add_module(Conc_Calc_CPP Conc_Calc_CPP.cpp)
