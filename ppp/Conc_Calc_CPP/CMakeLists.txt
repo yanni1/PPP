@@ -22,11 +22,23 @@ find_package(nanobind CONFIG REQUIRED)
 message(STATUS "Nanobind directory found: ${NB_DIR}")
 message(STATUS "CMAKE_PREFIX_PATH includes: ${CMAKE_PREFIX_PATH}")
 
+# Find OpenMP
+find_package(OpenMP REQUIRED)
+
 # Create the module
 nanobind_add_module(Conc_Calc_CPP Conc_Calc_CPP.cpp)
 
+if (OpenMP_CXX_FOUND)
+    message(STATUS "OpenMP found: YES")
+    message(STATUS "OpenMP compile flags: ${OpenMP_CXX_FLAGS}")
+    message(STATUS "OpenMP link flags: ${OpenMP_CXX_LIBRARIES}")
+    target_link_libraries(Conc_Calc_CPP PRIVATE OpenMP::OpenMP_CXX)
+else()
+    message(WARNING "OpenMP not found: building without parallelization!")
+endif()
+
 # install the module
-install(TARGETS Conc_Calc_CPP DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
+install(TARGETS Conc_Calc_CPP DESTINATION "/Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp")
 
 # generate/build/install _cmake_build directory
 # > cmake -S . -B _cmake_build
