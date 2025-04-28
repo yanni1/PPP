@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build with OpenMP",
+        "type": "shell",
+        "command": "clang++",
+        "args": [
+          "-Xpreprocessor", "-fopenmp",
+          "-I", "/opt/homebrew/opt/libomp/include",
+          "-L", "/opt/homebrew/opt/libomp/lib",
+          "-lomp",
+          "-g",
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Build C++ file with OpenMP using Homebrew clang++"
+      }
+    ]
+  }
+  

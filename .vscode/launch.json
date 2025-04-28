@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run C++ (OpenMP)",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "lldb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for LLDB",
+            "text": "settings set target.inline-breakpoint-strategy always",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }
+  

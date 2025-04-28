@@ -7,8 +7,12 @@
 // The example below is modified after http://people.duke.edu/~ccc14/cspy/18G_C++_Python_pybind11.html#More-on-working-with-numpy-arrays
 #include <nanobind/nanobind.h>
 #include <nanobind/ndarray.h> // add support for multi-dimensional arrays
-
+#include <vector>
+#include <omp.h>
 namespace nb = nanobind;
+
+
+
 
 void
 add

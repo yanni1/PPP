@@ -3,7 +3,10 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/Users/yanni/.pyenv/versions/3.12.2/lib/python3.12/site-packages/**",
+                "/Users/yanni/.pyenv/versions/3.12.2/include/**",
+                "/opt/homebrew/opt/libomp/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
