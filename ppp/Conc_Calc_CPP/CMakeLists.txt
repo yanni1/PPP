@@ -1,5 +1,6 @@
 project(Conc_Calc_CPP)
 cmake_minimum_required(VERSION 3.18...3.22)
+
 #set(Python_EXECUTABLE "/Users/yanni/.pyenv/versions/3.12.2/bin/python")
 find_package(Python 3.12.2 COMPONENTS Interpreter Development.Module REQUIRED) # minimal python is 3.8
 message(STATUS "Python found: ${Python_EXECUTABLE}")
@@ -25,8 +26,15 @@ message(STATUS "CMAKE_PREFIX_PATH includes: ${CMAKE_PREFIX_PATH}")
 # Find OpenMP
 find_package(OpenMP REQUIRED)
 
+# Add source files
+set(SOURCE_FILES
+    Conc_Calc_CPP.cpp
+    Params.cpp
+    Params.h
+)
+
 # Create the module
-nanobind_add_module(Conc_Calc_CPP Conc_Calc_CPP.cpp)
+nanobind_add_module(Conc_Calc_CPP ${SOURCE_FILES})
 
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
@@ -36,6 +44,7 @@ if (OpenMP_CXX_FOUND)
 else()
     message(WARNING "OpenMP not found: building without parallelization!")
 endif()
+
 
 # install the module
 install(TARGETS Conc_Calc_CPP DESTINATION "/Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp")
