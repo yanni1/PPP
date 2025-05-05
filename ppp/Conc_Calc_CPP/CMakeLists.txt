@@ -54,10 +54,11 @@ else()
     message(WARNING "OpenMP not found: building without parallelization!")
 endif()
 
+message(STATUS "CMAKE_CURRENT_DIR: ${CMAKE_CURRENT_DIR}")
 
 # install the module
-install(TARGETS Conc_Calc_CPP DESTINATION "${CMAKE_CURRENT_DIR}/..")
-install(TARGETS params_module DESTINATION "${CMAKE_CURRENT_DIR}/..")
+install(TARGETS Conc_Calc_CPP DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
+install(TARGETS params_module DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
 
 # generate/build/install _cmake_build directory
 # > cmake -S . -B _cmake_build
