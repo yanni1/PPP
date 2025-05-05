@@ -12,25 +12,20 @@
 #include <omp.h>
 #include <iostream>
 #include "Params.h"
+#include <nanobind/stl/vector.h>
+#include "Reac_Rate_CPP.cpp"
 
 namespace nb = nanobind;
 using namespace std;
 
-vector<float> CC_CPP(int nt_def) {
+vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> > > C) {
     //init params
     params p = params(nt_def);
     cout << "nt set to: " << nt_def << '\n' << endl;
-
-    //init C matrix (all values set to 0)
-    vector<vector<vector<float> > > C(3, vector<vector<float> > (p.ny, vector<float>(p.nx, 0.0))); // C will contain C_CO C_CO2 and C_O2 => C[species,[y,[x,conc_value]]]
-    //C[0] = C_CO
-    //C[1] = C_CO2
-    //C[2] = C_O2
-    // boundary conditions
-
-    // CO concetration at y = 0 => C0_reservoir
-    fill(C[0][0].begin(), C[0][0].end(), p.CO_reservoir);
     
+    //deep copy of C for new time step
+    vector<vector<vector<float> > > Cn(C);
+
     //start conc update
     for (int j = 1; j < p.ny+1; j++){
         for (int i = 1; i < p.nx+1; i++){
@@ -41,8 +36,6 @@ vector<float> CC_CPP(int nt_def) {
             if (distSq <= p.r2){
                 C[2][j][i] = p.O2_reservoir; // write o2 vent in C_O2
             };
-            //deep copy of C for new time step
-            vector<vector<vector<float> > > Cn(C);
 
             //diffusion
             float D2x_CO = float((C[0][j][i+1] + C[0][j][i-1] - 2*C[0][j][i]) / (p.dx * p.dx));
@@ -68,13 +61,28 @@ vector<float> CC_CPP(int nt_def) {
             float advec_O2 = p.v[i] * dy_CO2;
 
             //reaction
-
+            float k = reaction_rate_cpp(C, j, i);
+            float reac_CO = k * C[0][j][i];
+            float reac_CO2 = -1 * float(reac_CO); //right side of reaction
+            float reac_O2 = float(reac_CO);
+            
+            //update conc
+            Cn[0][j][i] = C[0][j][i] + (p.dt * (Diff_CO - advec_CO - reac_CO));
+            Cn[1][j][i] = C[1][j][i] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2));
+            Cn[2][j][i] = C[2][j][i] + (p.dt * (Diff_O2 - advec_O2 - reac_O2));
 
         };
     };
-    return p.v;
-
-
+    //edges
+    for (int j = 0; j < p.ny; j++) {
+        Cn[0][j][0] = Cn[0][j][1]; //setting vertical edge (left) conc to the same as column next to it
+        Cn[1][j][0] = Cn[1][j][1];
+        Cn[2][j][0] = Cn[2][j][1];
+        Cn[0][j][p.nx - 1] = Cn[0][j][p.nx - 2]; //setting vertical edge (right) conc to the same as column next to it
+        Cn[1][j][p.nx - 1] = Cn[1][j][p.nx - 2];
+        Cn[2][j][p.nx - 1] = Cn[2][j][p.nx - 2];
+    }
+    return Cn;
 }
 
 

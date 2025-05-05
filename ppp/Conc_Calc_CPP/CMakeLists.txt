@@ -31,6 +31,7 @@ set(SOURCE_FILES1
     Conc_Calc_CPP.cpp
     Params.cpp
     Params.h
+    Reac_Rate_CPP.cpp
 )
 
 # create module 1
@@ -44,6 +45,16 @@ set(SOURCE_FILES2
 
 #module 2
 nanobind_add_module(params_module ${SOURCE_FILES2})
+
+set(SOURCE_FILES3
+    Params.cpp
+    Params.h
+    Calc_CPP.cpp
+    Conc_Calc_CPP.cpp
+)
+
+# create module 3
+nanobind_add_module(calc ${SOURCE_FILES3})
 
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
@@ -59,6 +70,7 @@ message(STATUS "CMAKE_CURRENT_DIR: ${CMAKE_CURRENT_DIR}")
 # install the module
 install(TARGETS Conc_Calc_CPP DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
 install(TARGETS params_module DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
+install(TARGETS calc DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
 
 # generate/build/install _cmake_build directory
 # > cmake -S . -B _cmake_build

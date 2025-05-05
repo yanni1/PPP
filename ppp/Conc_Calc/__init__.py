@@ -48,9 +48,6 @@ def update_conc(C_CO, C_CO2, C_O2, O2_reservoir, v):
             reac_CO2 = -k * C_CO[j,i] #right side of reaction
             reac_O2 = k * C_CO[j,i]
             
-            #reac_CO = 0
-            #reac_CO2 = 0
-            #reac_O2 = 0
             #total
             Cn_CO[j,i] = C_CO[j,i] + (p.dt * (Diff_CO - advec_CO - reac_CO))
             Cn_CO2[j,i] = C_CO2[j,i] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2))

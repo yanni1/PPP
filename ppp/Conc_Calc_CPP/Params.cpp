@@ -48,7 +48,9 @@ vector<float> params::yf() {
 vector<float> params::vf() {
     for (int i = 0; i < nx+1; i++) {
         float xx = (x[i] - (Lx * 0.5)) / Lx;
-        v.push_back(xx);
+        float xx2 = xx * xx;
+        float xfin = (1 - 0.5*xx2);
+        v.push_back(xfin);
     };
     return v;
 }
