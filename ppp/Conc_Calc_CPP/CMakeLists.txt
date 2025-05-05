@@ -31,10 +31,11 @@ set(SOURCE_FILES
     Conc_Calc_CPP.cpp
     Params.cpp
     Params.h
+    Params_binding_nb.cpp
 )
 
 # Create the module
-nanobind_add_module(Conc_Calc_CPP ${SOURCE_FILES})
+nanobind_add_module(Conc_Calc_CPP params_module ${SOURCE_FILES})
 
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")

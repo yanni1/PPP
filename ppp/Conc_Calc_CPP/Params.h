@@ -28,6 +28,7 @@ public:
     int a;
     float r;
     float r2;
+    vector<float> v;
 
     // Constructor (defined in cpp file)
     params(int nt);
@@ -41,6 +42,7 @@ public:
     int af();
     float rf();
     float r2f();
+    vector<float> vf();
 };
 
 #endif //Conc_Calc_CPP_PARAMS_H

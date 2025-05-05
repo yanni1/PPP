@@ -23,6 +23,7 @@ params::params(int nt) {
     params::a = params::af();
     params::r = params::rf();
     params::r2 = params::r2f();
+    params::v = params::vf();
 };
 //actual mem functions
 int params::nxf() { return(int(Lx/dx)); };
@@ -44,8 +45,17 @@ vector<float> params::yf() {
     return y;
 };
 
+vector<float> params::vf() {
+    for (int i = 0; i < nx+1; i++) {
+        float xx = (x[i] - (Lx * 0.5)) / Lx;
+        v.push_back(xx);
+    };
+    return v;
+}
+
 // o2 vent circle parameters
 int params::bf() { return (ny*0.1); }; //center of circle y
 int params::af() { return (nx*0.25); }; //center of circle x
 float params::rf() { return (float(nx)*float(0.125)); }; //radius of circle
 float params::r2f() { return (r * r); };
+

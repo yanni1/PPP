@@ -16,13 +16,12 @@
 namespace nb = nanobind;
 using namespace std;
 
-
-
 int CC_CPP(int nt_def) {
     //init params
     params p = params(nt_def);
     cout << "nt set to: " << nt_def << '\n' << endl;
-    //init C matrix
+
+    //init C matrix (all values set to 0)
     vector<vector<vector<float> > > C(3, vector<vector<float> > (p.ny, vector<float>(p.nx, 0.0))); // C will contain C_CO C_CO2 and C_O2 => C[species,[y,[x,conc_value]]]
     //C[0] = C_CO
     //C[1] = C_CO2
@@ -31,7 +30,8 @@ int CC_CPP(int nt_def) {
 
     // CO concetration at y = 0 => C0_reservoir
     fill(C[0][0].begin(), C[0][0].end(), p.CO_reservoir);
-    //
+    
+    //start conc update
     for (int j = 1; j < p.ny+1; j++){
         for (int i = 1; i < p.nx+1; i++){
             // circular O2 vent
