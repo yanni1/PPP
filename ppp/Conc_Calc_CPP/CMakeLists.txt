@@ -27,15 +27,23 @@ message(STATUS "CMAKE_PREFIX_PATH includes: ${CMAKE_PREFIX_PATH}")
 find_package(OpenMP REQUIRED)
 
 # Add source files
-set(SOURCE_FILES
+set(SOURCE_FILES1
     Conc_Calc_CPP.cpp
+    Params.cpp
+    Params.h
+)
+
+# create module 1
+nanobind_add_module(Conc_Calc_CPP ${SOURCE_FILES1})
+
+set(SOURCE_FILES2
     Params.cpp
     Params.h
     Params_binding_nb.cpp
 )
 
-# Create the module
-nanobind_add_module(Conc_Calc_CPP params_module ${SOURCE_FILES})
+#module 2
+nanobind_add_module(params_module ${SOURCE_FILES2})
 
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
@@ -48,7 +56,8 @@ endif()
 
 
 # install the module
-install(TARGETS Conc_Calc_CPP DESTINATION "/Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp")
+install(TARGETS Conc_Calc_CPP DESTINATION "${CMAKE_CURRENT_DIR}/..")
+install(TARGETS params_module DESTINATION "${CMAKE_CURRENT_DIR}/..")
 
 # generate/build/install _cmake_build directory
 # > cmake -S . -B _cmake_build

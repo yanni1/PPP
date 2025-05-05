@@ -16,7 +16,7 @@
 namespace nb = nanobind;
 using namespace std;
 
-int CC_CPP(int nt_def) {
+vector<float> CC_CPP(int nt_def) {
     //init params
     params p = params(nt_def);
     cout << "nt set to: " << nt_def << '\n' << endl;
@@ -59,20 +59,20 @@ int CC_CPP(int nt_def) {
 
             //advection
             float dy_CO = float((C[0][j][i] - C[0][j-1][i]) / p.dy);
-            //float advec_CO = v[i] * dy_CO;
+            float advec_CO = p.v[i] * dy_CO;
 
             float dy_CO2 = float((C[1][j][i] - C[1][j-1][i]) / p.dy);
-            //float advec_CO2 = v[i] * dy_CO2;
+            float advec_CO2 = p.v[i] * dy_CO2;
 
             float dy_O2 = float((C[2][j][i] - C[2][j-1][i]) / p.dy);
-            //float advec_O2 = v[i] * dy_CO2;
+            float advec_O2 = p.v[i] * dy_CO2;
 
             //reaction
 
 
         };
     };
-    return 0;
+    return p.v;
 
 
 }
