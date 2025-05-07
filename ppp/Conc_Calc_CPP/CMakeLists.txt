@@ -29,9 +29,11 @@ find_package(OpenMP REQUIRED)
 # Add source files
 set(SOURCE_FILES1
     Conc_Calc_CPP.cpp
+    Conc_Calc_CPP.h
     Params.cpp
     Params.h
     Reac_Rate_CPP.cpp
+    Reac_Rate_CPP.h
 )
 
 # create module 1
@@ -51,10 +53,13 @@ set(SOURCE_FILES3
     Params.h
     Calc_CPP.cpp
     Conc_Calc_CPP.cpp
+    Conc_Calc_CPP.h
+    Reac_Rate_CPP.cpp
+    Reac_Rate_CPP.h
 )
 
 # create module 3
-nanobind_add_module(calc ${SOURCE_FILES3})
+nanobind_add_module(Calc_CPP ${SOURCE_FILES3})
 
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
@@ -65,12 +70,12 @@ else()
     message(WARNING "OpenMP not found: building without parallelization!")
 endif()
 
-message(STATUS "CMAKE_CURRENT_DIR: ${CMAKE_CURRENT_DIR}")
+message(STATUS "CMAKE_CURRENT_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
 
 # install the module
 install(TARGETS Conc_Calc_CPP DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
 install(TARGETS params_module DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
-install(TARGETS calc DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
+install(TARGETS Calc_CPP DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
 
 # generate/build/install _cmake_build directory
 # > cmake -S . -B _cmake_build

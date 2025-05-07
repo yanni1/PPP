@@ -13,7 +13,7 @@
 #include <iostream>
 #include "Params.h"
 #include <nanobind/stl/vector.h>
-#include "Reac_Rate_CPP.cpp"
+#include "Reac_Rate_CPP.h"
 
 namespace nb = nanobind;
 using namespace std;

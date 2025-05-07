@@ -1,11 +1,11 @@
 #include <nanobind/nanobind.h>
 #include <nanobind/ndarray.h> // add support for multi-dimensional arrays
 #include <vector>
-#include <omp.h>
+//#include <omp.h>
 #include <iostream>
 #include "Params.h"
 #include <nanobind/stl/vector.h>
-#include "Conc_Calc_CPP.cpp"
+#include "Conc_Calc_CPP.h"
 
 vector<vector<vector<float> > > calc(int nt_given) {
     //init C matrix (all values set to 0)
@@ -24,6 +24,6 @@ vector<vector<vector<float> > > calc(int nt_given) {
 }
 
 //make nb module
-NB_MODULE(calc, m) {
-    m.def("calc", &calc, "calculates the conc gradient");
+NB_MODULE(Calc_CPP, m) {
+    m.def("Calc_CPP", &calc, "calculates the conc gradient");
 };

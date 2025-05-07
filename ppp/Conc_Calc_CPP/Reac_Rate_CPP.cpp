@@ -1,6 +1,5 @@
-#include <vector>
-#include <iostream>
 #include "Params.h"
+#include "Reac_Rate_CPP.h"
 using namespace std;
 
 float reaction_rate_cpp(vector<vector<vector<float> > > C, int j, int i){
