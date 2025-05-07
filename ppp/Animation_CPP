@@ -2,11 +2,11 @@
 import Calc_CPP
 import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
-#import Conc_Calc_CPP
 
-C = Calc_CPP.Calc_CPP(100)
-print(C)
-'''
+
+C = Calc_CPP.Calc_CPP(10)
+print(C[0])
+
 fig, (ax1, ax2,ax3) = plt.subplots(1,3)
 ims=[]
 frame = 0
@@ -21,4 +21,3 @@ for con in C:
         continue
 ani = ArtistAnimation(fig, ims, 100)
 plt.show()
-'''

@@ -27,8 +27,8 @@ vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> >
     vector<vector<vector<float> > > Cn(C);
 
     //start conc update
-    for (int j = 1; j < p.ny+1; j++){
-        for (int i = 1; i < p.nx+1; i++){
+    for (int j = 1; j < p.ny-1; j++){
+        for (int i = 1; i < p.nx-1; i++){
             // circular O2 vent
             int x_dist2 = (i-p.a) * (i-p.a);
             int y_dist2 = (j-p.b) * (j-p.b);
