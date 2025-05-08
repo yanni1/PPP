@@ -21,7 +21,6 @@ using namespace std;
 vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> > > C) {
     //init params
     params p = params(nt_def);
-    cout << "nt set to: " << nt_def << '\n' << endl;
     
     //deep copy of C for new time step
     vector<vector<vector<float> > > Cn(C);

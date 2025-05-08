@@ -21,7 +21,7 @@ O2_reservoir = 1.0 #mol/m^3
 #Grid
 nx = int(Lx/dx) #number of gridpoints in x
 ny = int(Ly/dy) #number of gridpoints in y
-nt =100 #5s time interval
+nt =25 #5s time interval
 x = np.linspace(0, Lx, nx) #x_grid array
 y = np.linspace(0, Ly, ny) #y_grid array
 #o2 vent coords

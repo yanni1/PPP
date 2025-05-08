@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
 #import Conc_Calc_CPP
 
-C = calc()
+C = calc(25)
 fig, (ax1, ax2,ax3) = plt.subplots(1,3)
 ims=[]
 frame = 0
