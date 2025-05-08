@@ -18,11 +18,13 @@ vector<vector<vector<vector<float> > > > calc(int nt_given) {
     //C[2] = C_O2
     // CO concetration at y = 0 => C0_reservoir
     fill(C[0][0].begin(), C[0][0].end(), p.CO_reservoir);
-    
-    for (int n = 0; n < nt_given; n++){
+
+    for (int n = 0; n < nt_given; n++) {
         cout << "timestep:" << n << '\n' << endl;
-        Ct[n] = CC_CPP(nt_given, C);
-    };
+        C = CC_CPP(nt_given, C);  // evolve concentration
+        Ct[n] = C;                  // store current state
+    }                
+    
     
     return Ct;
 }

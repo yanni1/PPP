@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
 
 # C is a 4D array: C[t][s][y][x]
-C = Calc_CPP.Calc_CPP(25)
+C = Calc_CPP.Calc_CPP(500)
 
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
 ims = []
