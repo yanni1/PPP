@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "/Users/yanni/.pyenv/versions/3.12.2/lib/python3.12/site-packages/**",
                 "/Users/yanni/.pyenv/versions/3.12.2/include/**",
-                "/opt/homebrew/opt/libomp/include/**"
+                "/opt/homebrew/opt/libomp/include/**",
+                "/opt/homebrew/opt/gperftools/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

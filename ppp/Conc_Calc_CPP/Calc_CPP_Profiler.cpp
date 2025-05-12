@@ -1,8 +1,4 @@
-#ifndef PROFILING
-#include <nanobind/nanobind.h>
-#include <nanobind/ndarray.h> // add support for multi-dimensional arrays
-#include <nanobind/stl/vector.h>
-#endif
+#include <gperftools/profiler.h>
 
 #include <vector>
 //#include <omp.h>
@@ -10,8 +6,11 @@
 #include "Params.h"
 #include "Conc_Calc_CPP.h"
 
-vector<vector<vector<vector<float> > > > calc(int nt_given) {
-    //init C matrix (all values set to 0)
+
+int main(int, char**)
+{
+    ProfilerStart("Calc_CPP_profile.log");
+    int nt_given = 1;
     params p = params(nt_given);
     cout << "nt set to: " << nt_given << '\n' << endl;
     vector<vector<vector<vector<float>>>> Ct(nt_given, vector<vector<vector<float>>>(3, vector<vector<float>>(p.ny, vector<float>(p.nx, 0.0)))); // Ct will contain C_CO C_CO2 and C_O2 => C[time, species,[y,[x,conc_value]]]
@@ -26,15 +25,9 @@ vector<vector<vector<vector<float> > > > calc(int nt_given) {
         cout << "timestep:" << n << '\n' << endl;
         C = CC_CPP(nt_given, C);  // evolve concentration
         Ct[n] = C;                  // store current state
-    }                
-    
-    
-    return Ct;
-}
+    };
 
-#ifndef PROFILING
-//make nb module
-NB_MODULE(Calc_CPP, m) {
-    m.def("Calc_CPP", &calc, "calculates the conc gradient");
-};
-#endif
+    ProfilerStop();
+
+    return 0;
+}

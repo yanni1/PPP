@@ -6,16 +6,19 @@
 // See http://people.duke.edu/~ccc14/cspy/18G_C++_Python_pybind11.html for examples on how to use pybind11.
 // The example below is modified after http://people.duke.edu/~ccc14/cspy/18G_C++_Python_pybind11.html#More-on-working-with-numpy-arrays
 
+#ifndef PROFILING
 #include <nanobind/nanobind.h>
 #include <nanobind/ndarray.h> // add support for multi-dimensional arrays
+#include <nanobind/stl/vector.h>
+namespace nb = nanobind;
+#endif
+
 #include <vector>
 #include <omp.h>
 #include <iostream>
 #include "Params.h"
-#include <nanobind/stl/vector.h>
 #include "Reac_Rate_CPP.h"
 
-namespace nb = nanobind;
 using namespace std;
 
 vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> > > C) {
@@ -57,7 +60,7 @@ vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> >
             float advec_CO2 = p.v[i] * dy_CO2;
 
             float dy_O2 = float((C[2][j][i] - C[2][j-1][i]) / p.dy);
-            float advec_O2 = p.v[i] * dy_CO2;
+            float advec_O2 = p.v[i] * dy_O2;
 
             //reaction
             float k = reaction_rate_cpp(C, j, i);
@@ -84,8 +87,9 @@ vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> >
     return Cn;
 }
 
-
+#ifndef PROFILING
 //make nb module
 NB_MODULE(Conc_Calc_CPP, m) {
     m.def("CC_CPP", &CC_CPP, "updates conc each timestep");
 };
+#endif

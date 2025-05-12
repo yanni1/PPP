@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
 
 # C is a 4D array: C[t][s][y][x]
-C = Calc_CPP.Calc_CPP(500)
+C = Calc_CPP.Calc_CPP(25)
 
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
 ims = []
@@ -22,3 +22,4 @@ for t, con in enumerate(C):
 ani = ArtistAnimation(fig, ims, 100)
 plt.show()
 
+#/Users/yanni/.pyenv/versions/3.12.2/bin/python -m cProfile -o Animation.prof /Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp/Animation_CPP
