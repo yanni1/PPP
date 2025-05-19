@@ -1,5 +1,3 @@
-#include <gperftools/profiler.h>
-
 #include <vector>
 //#include <omp.h>
 #include <iostream>
@@ -9,7 +7,6 @@
 
 int main(int, char**)
 {
-    ProfilerStart("Calc_CPP_profile.log");
     int nt_given = 1;
     params p = params(nt_given);
     cout << "nt set to: " << nt_given << '\n' << endl;
@@ -26,8 +23,6 @@ int main(int, char**)
         C = CC_CPP(nt_given, C);  // evolve concentration
         Ct[n] = C;                  // store current state
     };
-
-    ProfilerStop();
 
     return 0;
 }
