@@ -82,6 +82,8 @@ void CC_CPP(const params& p, vector<vector<vector<float> > >& C, vector<vector<v
         Cn[0][j][p.nx - 1] = Cn[0][j][p.nx - 2]; //setting vertical edge (right) conc to the same as column next to it
         Cn[1][j][p.nx - 1] = Cn[1][j][p.nx - 2];
         Cn[2][j][p.nx - 1] = Cn[2][j][p.nx - 2];
+        //re set CO boundary condition
+        fill(C[0][0].begin(), C[0][0].end(), p.CO_reservoir);
     }
     return;
 }

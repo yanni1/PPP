@@ -28,7 +28,8 @@ vector<vector<vector<vector<float> > > > calc(int nt_given) {
         cout << "timestep:" << n << '\n' << endl;
         CC_CPP(p, C, Cn);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
         Ct[n] = C;                  // store current timestep "snapshot" into Ct
-    }                
+        swap(C, Cn); // reuse buffers for next step without copying => C@n -> C@n+1 (input) and Cn now holds old state (C@n) => does not matter, gets replaced by computed data anyway
+    };                
     
     
     return Ct;
