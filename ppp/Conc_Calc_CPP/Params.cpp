@@ -30,21 +30,33 @@ int params::nxf() { return(int(Lx/dx)); };
 int params::nyf() { return(int(Ly/dy)); };
 
 vector<float> params::xf() { 
+    vector<float> x(nx+1); 
     for (int i = 0; i < nx+1; i++){
         float ddx = float(i) * float(dx);
-        x.push_back(ddx);
+        x[i] = ddx;
     };
     return x;
 };
 
-vector<float> params::yf() { 
+vector<float> params::yf() {
+    vector<float> y(ny+1); 
     for (int i = 0; i < ny+1; i++){
         float ddy = float(i) * float(dy);
-        y.push_back(ddy);
+        y[i] = ddy;
     };
     return y;
 };
 
+vector<float> params::vf() {
+    vector<float> v(nx + 1); // new local vector
+    for (int i = 0; i <= nx; i++) {
+        float xx = (x[i] - (Lx * 0.5)) / Lx;
+        float xx2 = xx * xx;
+        v[i] = (1 - 0.5f * xx2);
+    }
+    return v;
+}
+/*
 vector<float> params::vf() {
     for (int i = 0; i < nx+1; i++) {
         float xx = (x[i] - (Lx * 0.5)) / Lx;
@@ -54,6 +66,8 @@ vector<float> params::vf() {
     };
     return v;
 }
+    remove v.push_back and init the vectro with right size beforehand and then allocate values
+    */
 
 // o2 vent circle parameters
 int params::bf() { return (ny*0.1); }; //center of circle y

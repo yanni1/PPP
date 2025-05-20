@@ -21,9 +21,7 @@ namespace nb = nanobind;
 
 using namespace std;
 
-vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> > > C) {
-    //init params
-    params p = params(nt_def);
+vector<vector<vector<float> > > CC_CPP(const params& p, vector<vector<vector<float> > > C) {
     
     //deep copy of C for new time step
     vector<vector<vector<float> > > Cn(C);
@@ -63,7 +61,7 @@ vector<vector<vector<float> > > CC_CPP(int nt_def, vector<vector<vector<float> >
             float advec_O2 = p.v[i] * dy_O2;
 
             //reaction
-            float k = reaction_rate_cpp(C, j, i);
+            float k = reaction_rate_cpp(C, j, i, p);
             float reac_CO = k * C[0][j][i];
             float reac_CO2 = -1 * float(reac_CO); //right side of reaction
             float reac_O2 = float(reac_CO);

@@ -12,6 +12,7 @@
 
 vector<vector<vector<vector<float> > > > calc(int nt_given) {
     //init C matrix (all values set to 0)
+    //params 1 keer init en dan altijd als const doorgeven
     params p = params(nt_given);
     cout << "nt set to: " << nt_given << '\n' << endl;
     vector<vector<vector<vector<float>>>> Ct(nt_given, vector<vector<vector<float>>>(3, vector<vector<float>>(p.ny, vector<float>(p.nx, 0.0)))); // Ct will contain C_CO C_CO2 and C_O2 => C[time, species,[y,[x,conc_value]]]
@@ -24,7 +25,7 @@ vector<vector<vector<vector<float> > > > calc(int nt_given) {
 
     for (int n = 0; n < nt_given; n++) {
         cout << "timestep:" << n << '\n' << endl;
-        C = CC_CPP(nt_given, C);  // evolve concentration
+        C = CC_CPP(p, C);  // evolve concentration
         Ct[n] = C;                  // store current state
     }                
     
