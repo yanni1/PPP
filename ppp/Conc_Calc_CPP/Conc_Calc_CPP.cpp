@@ -21,11 +21,12 @@ namespace nb = nanobind;
 
 using namespace std;
 
-vector<vector<vector<float> > > CC_CPP(const params& p, vector<vector<vector<float> > > C) {
+void CC_CPP(const params& p, vector<vector<vector<float> > >& C, vector<vector<vector<float> > >& Cn) { //make the passed vectors pointers (buffers)
+
     
     //deep copy of C for new time step
-    vector<vector<vector<float> > > Cn(C);
-
+    //vector<vector<vector<float> > > Cn(C);
+    // instead of this Cn is modified directly so no large vectors needs to be returned => work directly into the two preallocated buffers
     //start conc update
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
@@ -82,7 +83,7 @@ vector<vector<vector<float> > > CC_CPP(const params& p, vector<vector<vector<flo
         Cn[1][j][p.nx - 1] = Cn[1][j][p.nx - 2];
         Cn[2][j][p.nx - 1] = Cn[2][j][p.nx - 2];
     }
-    return Cn;
+    return;
 }
 
 #ifndef PROFILING

@@ -17,6 +17,7 @@ vector<vector<vector<vector<float> > > > calc(int nt_given) {
     cout << "nt set to: " << nt_given << '\n' << endl;
     vector<vector<vector<vector<float>>>> Ct(nt_given, vector<vector<vector<float>>>(3, vector<vector<float>>(p.ny, vector<float>(p.nx, 0.0)))); // Ct will contain C_CO C_CO2 and C_O2 => C[time, species,[y,[x,conc_value]]]
     vector<vector<vector<float> > > C(3, vector<vector<float> > (p.ny, vector<float>(p.nx, 0.0))); // C will contain C_CO C_CO2 and C_O2 => C[species,[y,[x,conc_value]]] 
+    vector<vector<vector<float> > > Cn(3, vector<vector<float> > (p.ny, vector<float>(p.nx, 0.0))); // output buffer => now only made once :)
     //C[0] = C_CO
     //C[1] = C_CO2
     //C[2] = C_O2
@@ -25,8 +26,8 @@ vector<vector<vector<vector<float> > > > calc(int nt_given) {
 
     for (int n = 0; n < nt_given; n++) {
         cout << "timestep:" << n << '\n' << endl;
-        C = CC_CPP(p, C);  // evolve concentration
-        Ct[n] = C;                  // store current state
+        CC_CPP(p, C, Cn);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
+        Ct[n] = C;                  // store current timestep "snapshot" into Ct
     }                
     
     
