@@ -21,13 +21,18 @@ namespace nb = nanobind;
 
 using namespace std;
 
-void CC_CPP(const params& p, vector<vector<vector<float> > >& C, vector<vector<vector<float> > >& Cn) { //make the passed vectors pointers (buffers)
+void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the passed vectors pointers (buffers)
 
     
     //deep copy of C for new time step
     //vector<vector<vector<float> > > Cn(C);
-    // instead of this Cn is modified directly so no large vectors needs to be returned => work directly into the two preallocated buffers
+    //Cn is modified directly so no large vectors needs to be returned => work directly into the two preallocated buffers
     //start conc update
+
+    //use of flat buffers needs:
+    
+    //index calc:
+
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
             // circular O2 vent
@@ -35,30 +40,32 @@ void CC_CPP(const params& p, vector<vector<vector<float> > >& C, vector<vector<v
             int y_dist2 = (j-p.b) * (j-p.b);
             int distSq = x_dist2 + y_dist2;
             if (distSq <= p.r2){
-                C[2][j][i] = p.O2_reservoir; // write o2 vent in C_O2
+                //C[2][j][i] = p.O2_reservoir; // write o2 vent in C_O2
+                int o2_idx = p.idx(2, j, i);
+                C[o2_idx] = p.O2_reservoir;
             };
 
             //diffusion
-            float D2x_CO = float((C[0][j][i+1] + C[0][j][i-1] - 2*C[0][j][i]) / (p.dx * p.dx));
-            float D2y_CO = float((C[0][j+1][i] + C[0][j-1][i] - 2*C[0][j][i]) / (p.dy * p.dy));
+            float D2x_CO = float((C[p.idx(0,j,i+1)] + C[p.idx(0,j,i-1)] - 2*C[p.idx(0,j,i)]) / (p.dx * p.dx));
+            float D2y_CO = float((C[p.idx(0,j+1,i)] + C[p.idx(0,j-1,i)] - 2*C[p.idx(0,j,i)]) / (p.dy * p.dy));
             float Diff_CO = p.D * (D2x_CO + D2y_CO);
 
-            float D2x_CO2 = float((C[1][j][i+1] + C[1][j][i-1] - 2*C[1][j][i]) / (p.dx * p.dx));
-            float D2y_CO2 = float((C[1][j+1][i] + C[1][j-1][i] - 2*C[1][j][i]) / (p.dy * p.dy));
+            float D2x_CO2 = float((C[p.idx(1,j,i+1)] + C[p.idx(1,j,i-1)] - 2*C[p.idx(1,j,i)]) / (p.dx * p.dx));
+            float D2y_CO2 = float((C[p.idx(1,j+1,i)] + C[p.idx(1,j-1,i)] - 2*C[p.idx(1,j,i)]) / (p.dy * p.dy));
             float Diff_CO2 = p.D * (D2x_CO2 + D2y_CO2);
 
-            float D2x_O2 = float((C[2][j][i+1] + C[2][j][i-1] - 2*C[2][j][i]) / (p.dx * p.dx));
-            float D2y_O2 = float((C[2][j+1][i] + C[2][j-1][i] - 2*C[2][j][i]) / (p.dy * p.dy));
+            float D2x_O2 = float((C[p.idx(2,j,i+1)] + C[p.idx(2,j,i-1)] - 2*C[p.idx(2,j,i)]) / (p.dx * p.dx));
+            float D2y_O2 = float((C[p.idx(2,j+1,i)] + C[p.idx(2,j-1,i)] - 2*C[p.idx(2,j,i)]) / (p.dy * p.dy));
             float Diff_O2 = p.D * (D2x_O2 + D2y_O2);
 
             //advection
-            float dy_CO = float((C[0][j][i] - C[0][j-1][i]) / p.dy);
+            float dy_CO = float((C[p.idx(0,j,i)] - C[p.idx(0,j-1,i)]) / p.dy);
             float advec_CO = p.v[i] * dy_CO;
 
-            float dy_CO2 = float((C[1][j][i] - C[1][j-1][i]) / p.dy);
+            float dy_CO2 = float((C[p.idx(1,j,i)] - C[p.idx(1,j-1,i)]) / p.dy);
             float advec_CO2 = p.v[i] * dy_CO2;
 
-            float dy_O2 = float((C[2][j][i] - C[2][j-1][i]) / p.dy);
+            float dy_O2 = float((C[p.idx(2,j,i)] - C[p.idx(2,j-1,i)])  / p.dy);
             float advec_O2 = p.v[i] * dy_O2;
 
             //reaction
@@ -68,20 +75,20 @@ void CC_CPP(const params& p, vector<vector<vector<float> > >& C, vector<vector<v
             float reac_O2 = float(reac_CO);
             
             //update conc
-            Cn[0][j][i] = C[0][j][i] + (p.dt * (Diff_CO - advec_CO - reac_CO));
-            Cn[1][j][i] = C[1][j][i] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2));
-            Cn[2][j][i] = C[2][j][i] + (p.dt * (Diff_O2 - advec_O2 - reac_O2));
+            Cn[p.idx(0,j,i)] = C[p.idx(0,j,i)] + (p.dt * (Diff_CO - advec_CO - reac_CO));
+            Cn[p.idx(1,j,i)] = C[p.idx(1,j,i)] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2));
+            Cn[p.idx(2,j,i)] = C[p.idx(2,j,i)] + (p.dt * (Diff_O2 - advec_O2 - reac_O2));
 
         };
     };
     //edges
     for (int j = 0; j < p.ny; j++) {
-        Cn[0][j][0] = Cn[0][j][1]; //setting vertical edge (left) conc to the same as column next to it
-        Cn[1][j][0] = Cn[1][j][1];
-        Cn[2][j][0] = Cn[2][j][1];
-        Cn[0][j][p.nx - 1] = Cn[0][j][p.nx - 2]; //setting vertical edge (right) conc to the same as column next to it
-        Cn[1][j][p.nx - 1] = Cn[1][j][p.nx - 2];
-        Cn[2][j][p.nx - 1] = Cn[2][j][p.nx - 2];
+        Cn[p.idx(0,j,0)] = Cn[p.idx(0,j,1)]; //setting vertical edge (left) conc to the same as column next to it
+        Cn[p.idx(1,j,0)] = Cn[p.idx(1,j,1)];
+        Cn[p.idx(2,j,0)] = Cn[p.idx(2,j,1)];
+        Cn[p.idx(0,j,p.nx - 1)] = Cn[p.idx(0,j,p.nx - 2)]; //setting vertical edge (right) conc to the same as column next to it
+        Cn[p.idx(1,j,p.nx - 1)] = Cn[p.idx(1,j,p.nx - 2)]; 
+        Cn[p.idx(2,j,p.nx - 1)] = Cn[p.idx(2,j,p.nx - 2)]; 
         //re set CO boundary condition
         fill(C[0][0].begin(), C[0][0].end(), p.CO_reservoir);
     }

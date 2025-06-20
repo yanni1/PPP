@@ -3,5 +3,6 @@
     "files.associations": {
         "vector": "cpp",
         "iosfwd": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp/Conc_Calc_CPP"
 }

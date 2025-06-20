@@ -16,6 +16,7 @@ params::params(int nt) {
     params::O2_reservoir = 1.0;
     params::nx = params::nxf();
     params::ny = params::nyf();
+    params::nxny = nx * ny;
     params::nt = nt;
     params::x = params::xf();
     params::y = params::yf();

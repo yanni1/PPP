@@ -7,7 +7,7 @@
 
 int main(int, char**)
 {
-    int nt_given = 10;
+    int nt_given = 1000;
     params p = params(nt_given);
     cout << "nt set to: " << nt_given << '\n' << endl;
     vector<vector<vector<vector<float>>>> Ct(nt_given, vector<vector<vector<float>>>(3, vector<vector<float>>(p.ny, vector<float>(p.nx, 0.0)))); // Ct will contain C_CO C_CO2 and C_O2 => C[time, species,[y,[x,conc_value]]]

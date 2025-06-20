@@ -29,6 +29,9 @@ public:
     float r;
     float r2;
     vector<float> v;
+    //precomputed const fot flat indexing => inline fct
+    int ns = 3;
+    int nxny = 0;
 
     // Constructor (defined in cpp file)
     params(int nt);
@@ -43,6 +46,9 @@ public:
     float rf();
     float r2f();
     vector<float> vf();
+    inline int idx(int s, int j, int i) const {
+        return s * nxny + j * nx + i;
+    }
 };
 
 #endif //Conc_Calc_CPP_PARAMS_H
