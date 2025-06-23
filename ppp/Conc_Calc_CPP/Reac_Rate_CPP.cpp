@@ -3,9 +3,8 @@
 using namespace std;
 
 float reaction_rate_cpp(const vector<float> &C, int j, int i, const params& p){ 
-    /*You're passing C by value, which creates a full deep copy of the entire 3D vector C every time this function is called.
 
-If C is size [3][ny][nx] and you're calling this inside loops (e.g., over i, j), then you're duplicating potentially tens or hundreds of MB per call—which explains your massive memory usage (1.28 GiB).*/
+
 
     float k_b = (p.k0 * 0.25) * C[p.idx(1,j,i)];
     float k_f = (p.k0) * C[p.idx(0,j,i)] * C[p.idx(2,j,i)];

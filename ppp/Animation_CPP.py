@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
 import numpy as np
 
-# C is a 4D array: C[t][s][y][x]
 C_flat = Calc_CPP.Calc_CPP(1000)
 
+# C needs to be a 4D array: C[t][s][y][x]
 nt =1000
 ns = 3
 ny = 200
