@@ -23,16 +23,6 @@ using namespace std;
 
 void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the passed vectors pointers (buffers)
 
-    
-    //deep copy of C for new time step
-    //vector<vector<vector<float> > > Cn(C);
-    //Cn is modified directly so no large vectors needs to be returned => work directly into the two preallocated buffers
-    //start conc update
-
-    //use of flat buffers needs:
-    
-    //index calc:
-
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
             // circular O2 vent
@@ -40,7 +30,6 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the p
             int y_dist2 = (j-p.b) * (j-p.b);
             int distSq = x_dist2 + y_dist2;
             if (distSq <= p.r2){
-                //C[2][j][i] = p.O2_reservoir; // write o2 vent in C_O2
                 int o2_idx = p.idx(2, j, i);
                 C[o2_idx] = p.O2_reservoir;
             };
