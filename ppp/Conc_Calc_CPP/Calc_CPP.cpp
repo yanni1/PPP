@@ -10,7 +10,7 @@
 #include "Params.h"
 #include "Conc_Calc_CPP.h"
 
-vector<vector<vector<vector<float> > > > calc(int nt_given) {
+vector<float> calc(int nt_given) {
     //init C matrix (all values set to 0)
     //params 1 keer init en dan altijd als const doorgeven
     params p = params(nt_given);
@@ -28,10 +28,7 @@ vector<vector<vector<vector<float> > > > calc(int nt_given) {
     // CO concetration at y = 0 => C0_reservoir
     //fill(C[0][0].begin(), C[0][0].end(), p.CO_reservoir);
     //flattened initial condition
-    for (int x = 0; x < p.nx; ++x) {
-        int idx = (0 * p.ny + 0) * p.nx + x; // s=0 (CO), y=0
-        C[idx] = p.CO_reservoir;
-    };
+    fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir);
 
     for (int n = 0; n < nt_given; n++) {
         cout << "timestep:" << n << '\n' << endl;

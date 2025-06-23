@@ -2,9 +2,16 @@
 import Calc_CPP
 import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
+import numpy as np
 
 # C is a 4D array: C[t][s][y][x]
-C = Calc_CPP.Calc_CPP(1000)
+C_flat = Calc_CPP.Calc_CPP(1000)
+
+nt =1000
+ns = 3
+ny = 200
+nx = 50
+C = np.array(C_flat, dtype=np.float32).reshape((nt, ns, ny, nx))
 
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
 ims = []

@@ -70,7 +70,7 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the p
 
             //reaction
             float k = reaction_rate_cpp(C, j, i, p);
-            float reac_CO = k * C[0][j][i];
+            float reac_CO = k * C[p.idx(0,j,i)];
             float reac_CO2 = -1 * float(reac_CO); //right side of reaction
             float reac_O2 = float(reac_CO);
             
@@ -90,7 +90,8 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the p
         Cn[p.idx(1,j,p.nx - 1)] = Cn[p.idx(1,j,p.nx - 2)]; 
         Cn[p.idx(2,j,p.nx - 1)] = Cn[p.idx(2,j,p.nx - 2)]; 
         //re set CO boundary condition
-        fill(C[0][0].begin(), C[0][0].end(), p.CO_reservoir);
+        fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir); //fill O's from 0 to 0+ nx (first row of species 0 (CO))
+
     }
     return;
 }
