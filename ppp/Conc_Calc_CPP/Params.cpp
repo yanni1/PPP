@@ -25,10 +25,25 @@ params::params(int nt) {
     params::r = params::rf();
     params::r2 = params::r2f();
     params::v = params::vf();
+    params::alpha = 0.9;
+    params::mu_CO = 0.4;
+    params::mu_CO2 = 0.6;
+    params::sigma_CO = 0.5;
+    params::sigma_CO2 = 0.5;
+    params::x0_cc = params::x0_ccf();
+    params::y0_cc = params::y0_ccf();
+    params::semiMaj = params::semiMajf();
+    params::semiMin = params::semiMinf();
+
+
 };
 //actual mem functions
 int params::nxf() { return(int(Lx/dx)); };
 int params::nyf() { return(int(Ly/dy)); };
+int params::x0_ccf() { return(int(nx/2)); };
+int params::y0_ccf() { return(int((Ly - 0.1)/dy)); };
+int params::semiMajf() { return(int((Lx/2)/dx)); };
+int params::semiMinf() { return(int(0.1/dy)); };
 
 vector<float> params::xf() { 
     vector<float> x(nx+1); 

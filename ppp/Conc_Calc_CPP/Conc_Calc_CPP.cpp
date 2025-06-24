@@ -62,12 +62,24 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the p
             float reac_CO = k * C[p.idx(0,j,i)];
             float reac_CO2 = -1 * float(reac_CO); //right side of reaction
             float reac_O2 = float(reac_CO);
-            
+
+            //carbon capture ellipse
+            float eps_CO = 0;
+            float eps_CO2 = 0;
+            if (((((i-p.x0_cc)*(i-p.x0_cc))/(p.semiMaj*p.semiMaj))+(((j-p.y0_cc)*(j-p.y0_cc))/(p.semiMin*p.semiMin))) <= 1.00f){
+                float sum2_C = ((C[p.idx(0, j, i)] - p.mu_CO)*(C[p.idx(0, j, i)] - p.mu_CO)) + ((C[p.idx(1, j, i)] - p.mu_CO2)*(C[p.idx(1, j, i)] - p.mu_CO2));
+                float rat_CO = (C[p.idx(0, j, i)] / sum2_C);
+                float rat_CO2 = (C[p.idx(1, j, i)] / sum2_C);
+                eps_CO = (p.alpha /(p.sigma_CO * sqrtf(2.0f * M_PI))) * expf(-0.5f*(rat_CO/(p.sigma_CO*p.sigma_CO)));
+                eps_CO2 = (p.alpha /(p.sigma_CO2 * sqrtf(2.0f * M_PI))) * expf(-0.5f*(rat_CO2/(p.sigma_CO2*p.sigma_CO2)));
+            };
+
             //update conc
-            Cn[p.idx(0,j,i)] = C[p.idx(0,j,i)] + (p.dt * (Diff_CO - advec_CO - reac_CO));
-            Cn[p.idx(1,j,i)] = C[p.idx(1,j,i)] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2));
+            Cn[p.idx(0,j,i)] = C[p.idx(0,j,i)] + (p.dt * (Diff_CO - advec_CO - reac_CO)) - (eps_CO * C[p.idx(0,j,i)]);
+            Cn[p.idx(1,j,i)] = C[p.idx(1,j,i)] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2)) - (eps_CO2 * C[p.idx(1,j,i)]);
             Cn[p.idx(2,j,i)] = C[p.idx(2,j,i)] + (p.dt * (Diff_O2 - advec_O2 - reac_O2));
 
+            
         };
     };
     //edges

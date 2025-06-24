@@ -29,6 +29,16 @@ public:
     float r;
     float r2;
     vector<float> v;
+    //carbon capture params
+    float alpha;
+    float mu_CO;
+    float mu_CO2;
+    float sigma_CO;
+    float sigma_CO2;
+    int x0_cc;
+    int y0_cc;
+    int semiMaj;
+    int semiMin;
     //precomputed const fot flat indexing => inline fct
     int ns = 3;
     int nxny = 0;
@@ -46,6 +56,10 @@ public:
     float rf();
     float r2f();
     vector<float> vf();
+    int x0_ccf();
+    int y0_ccf();
+    int semiMajf();
+    int semiMinf();
     inline int idx(int s, int j, int i) const {
         return s * nxny + j * nx + i;
     }

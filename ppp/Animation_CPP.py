@@ -1,13 +1,14 @@
 # Animation update function
 import Calc_CPP
+import params_module
 import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
 import numpy as np
 
-C_flat = Calc_CPP.Calc_CPP(1000)
+nt = 10000
+C_flat = Calc_CPP.Calc_CPP(nt)
 
 # C needs to be a 4D array: C[t][s][y][x]
-nt =1000
 ns = 3
 ny = 200
 nx = 50
@@ -18,7 +19,7 @@ ims = []
 
 #loop over time steps
 for t, con in enumerate(C):
-    if t % 10 == 0:
+    if t % 100 == 0:
         # con is a 3D array at this time step: con[s][y][x]
         im1 = ax1.imshow(con[0], animated=True)  # CO
         im2 = ax2.imshow(con[1], animated=True)  # CO2
