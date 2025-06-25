@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
 import numpy as np
 
-nt = 1000
+nt = 5000
 C_flat = Calc_CPP.Calc_CPP(nt)
 
 # C needs to be a 4D array: C[t][s][y][x]

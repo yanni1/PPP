@@ -39,6 +39,11 @@ set(SOURCE_FILES1
 # create module 1
 nanobind_add_module(Conc_Calc_CPP ${SOURCE_FILES1})
 
+# set omp flags for module 1
+target_compile_options(Conc_Calc_CPP PRIVATE
+  $<$<CONFIG:Release>:-O3 -march=native -funroll-loops -Rpass=loop-vectorize>
+)
+
 set(SOURCE_FILES2
     Params.cpp
     Params.h
@@ -61,11 +66,16 @@ set(SOURCE_FILES3
 # create module 3
 nanobind_add_module(Calc_CPP ${SOURCE_FILES3})
 
+target_compile_options(Calc_CPP PRIVATE
+  $<$<CONFIG:Release>:-O3 -march=native -funroll-loops -Rpass=loop-vectorize>
+)
+
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
     message(STATUS "OpenMP compile flags: ${OpenMP_CXX_FLAGS}")
     message(STATUS "OpenMP link flags: ${OpenMP_CXX_LIBRARIES}")
     target_link_libraries(Conc_Calc_CPP PRIVATE OpenMP::OpenMP_CXX)
+    target_link_libraries(Calc_CPP PRIVATE OpenMP::OpenMP_CXX)
 else()
     message(WARNING "OpenMP not found: building without parallelization!")
 endif()
