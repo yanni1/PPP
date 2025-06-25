@@ -5,7 +5,7 @@
 #endif
 
 #include <vector>
-//#include <omp.h>
+#include <omp.h>
 #include <iostream>
 #include "Params.h"
 #include "Conc_Calc_CPP.h"
@@ -31,14 +31,9 @@ vector<float> calc(int nt_given) {
         cout << "timestep:" << n << '\n' << endl;
         CC_CPP(p, C, Cn);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
         //Store current timestep C into flat Ct
-        for (int s = 0; s < p.ns; ++s) {
-            for (int y = 0; y < p.ny; ++y) {
-                for (int x = 0; x < p.nx; ++x) {
-                    int ct_idx = ((n * p.ns + s) * p.ny + y) * p.nx + x;
-                    int c_idx = (s * p.ny + y) * p.nx + x;
-                    Ct[ct_idx] = C[c_idx];
-                }
-            }
+        #pragma omp parallel for simd
+        for (int idx = 0; idx < p.ns * p.ny * p.nx; idx++) { //fully flattened data copying
+            Ct[n * p.ns * p.ny * p.nx + idx] = C[idx];
         }
         swap(C, Cn); // reuse buffers for next step without copying => C@n -> C@n+1 (input) and Cn now holds old state (C@n) => does not matter, gets replaced by computed data anyway
     };                

@@ -23,6 +23,7 @@ using namespace std;
 
 void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the passed vectors pointers (buffers)
 
+    #pragma omp parallel for collapse(2)
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
             // circular O2 vent
@@ -90,10 +91,9 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the p
         Cn[p.idx(0,j,p.nx - 1)] = Cn[p.idx(0,j,p.nx - 2)]; //setting vertical edge (right) conc to the same as column next to it
         Cn[p.idx(1,j,p.nx - 1)] = Cn[p.idx(1,j,p.nx - 2)]; 
         Cn[p.idx(2,j,p.nx - 1)] = Cn[p.idx(2,j,p.nx - 2)]; 
-        //re set CO boundary condition
-        fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir); //fill O's from 0 to 0+ nx (first row of species 0 (CO))
-
     }
+    //re set CO boundary condition
+    fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir); //fill O's from 0 to 0+ nx (first row of species 0 (CO))
     return;
 }
 
