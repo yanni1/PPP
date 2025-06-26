@@ -3,30 +3,54 @@ import Calc_CPP
 import params_module
 import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
+from matplotlib.patches import Ellipse
 import numpy as np
 
 nt = 5000
-C_flat = Calc_CPP.Calc_CPP(nt)
+p = params_module.params(nt)
+C_flat, eps_field = Calc_CPP.Calc_CPP(nt)
 
 # C needs to be a 4D array: C[t][s][y][x]
-ns = 3
-ny = 200
-nx = 50
-C = np.array(C_flat, dtype=np.float32).reshape((nt, ns, ny, nx))
+C = np.array(C_flat, dtype=np.float32).reshape((p.nt, p.ns, p.ny, p.nx))
+eps_field = np.array(eps_field  , dtype=np.float32).reshape((p.nt, p.ny, p.nx))
 
-fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
+extent = [0, p.nx, 0, p.ny]
+
+fig, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4)
+ax1.set_title("CO")
+ax2.set_title("CO₂")
+ax3.set_title("O₂")
+ax4.set_title("ε_CO (absorption)")
 ims = []
+# Physical center and axes (convert from index to spatial coordinates)
+x_center = p.x0_cc
+y_center = p.y0_cc
+width = 2 * p.semiMaj
+height = 2 * p.semiMin
+print(x_center)
+
+#ellipse patches
+ell1 = Ellipse((x_center, y_center), width, height, edgecolor='orange', facecolor='none', lw=1.5, linestyle='--')
+ell2 = Ellipse((x_center, y_center), width, height, edgecolor='orange', facecolor='none', lw=1.5, linestyle='--')
+ax1.add_patch(ell1)
+ax2.add_patch(ell2)
 
 #loop over time steps
-for t, con in enumerate(C):
+for t in range(nt):
     if t % 100 == 0:
+        con = C[t]
+        eps = eps_field[t]
         # con is a 3D array at this time step: con[s][y][x]
-        im1 = ax1.imshow(con[0], animated=True)  # CO
-        im2 = ax2.imshow(con[1], animated=True)  # CO2
-        im3 = ax3.imshow(con[2], animated=True)  # O2
-        ims.append([im1, im2, im3])
+        im1 = ax1.imshow(con[0], animated=True, origin='lower', extent=extent, aspect='equal')
+        im2 = ax2.imshow(con[1], animated=True, origin='lower', extent=extent, aspect='equal')
+        im3 = ax3.imshow(con[2], animated=True, origin='lower', extent=extent, aspect='equal')
+        im4 = ax4.imshow(eps, animated=True, origin='lower', extent=extent, aspect='equal')
+        ims.append([im1, im2, im3, im4])
     else: 
         continue
+
+fig.colorbar(ax3.images[0], ax=ax3, orientation='vertical', label='Concentration')
+
 ani = ArtistAnimation(fig, ims, 100)
 plt.show()
 

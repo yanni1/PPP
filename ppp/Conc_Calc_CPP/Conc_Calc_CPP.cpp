@@ -21,8 +21,8 @@ namespace nb = nanobind;
 
 using namespace std;
 
-void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the passed vectors pointers (buffers)
-
+void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>& eps_field) { //make the passed vectors pointers (buffers)
+    
     #pragma omp parallel for collapse(2)
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
@@ -68,16 +68,21 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn) { //make the p
             float eps_CO = 0;
             float eps_CO2 = 0;
             if (((((i-p.x0_cc)*(i-p.x0_cc))/(p.semiMaj*p.semiMaj))+(((j-p.y0_cc)*(j-p.y0_cc))/(p.semiMin*p.semiMin))) <= 1.00f){
-                float sum2_C = ((C[p.idx(0, j, i)] - p.mu_CO)*(C[p.idx(0, j, i)] - p.mu_CO)) + ((C[p.idx(1, j, i)] - p.mu_CO2)*(C[p.idx(1, j, i)] - p.mu_CO2));
-                float rat_CO = (C[p.idx(0, j, i)] / sum2_C);
-                float rat_CO2 = (C[p.idx(1, j, i)] / sum2_C);
-                eps_CO = (p.alpha /(p.sigma_CO * sqrtf(2.0f * M_PI))) * expf(-0.5f*(rat_CO/(p.sigma_CO*p.sigma_CO)));
-                eps_CO2 = (p.alpha /(p.sigma_CO2 * sqrtf(2.0f * M_PI))) * expf(-0.5f*(rat_CO2/(p.sigma_CO2*p.sigma_CO2)));
+                float sum_C = C[p.idx(0, j, i)] + C[p.idx(1, j, i)];
+                if (sum_C > 1e-8f) { //add div by 0 protection => fix weird behaviour
+                    float C_norm_CO = C[p.idx(0, j, i)]/sum_C;
+                    float C_norm_CO2 = C[p.idx(1, j, i)]/sum_C;
+                    float exp_CO = ((C_norm_CO - p.mu_CO) / p.sigma_CO) * ((C_norm_CO - p.mu_CO) / p.sigma_CO);
+                    float exp_CO2 = ((C_norm_CO2 - p.mu_CO2) / p.sigma_CO2) * ((C_norm_CO2 - p.mu_CO2) / p.sigma_CO2);
+                    eps_CO = (p.alpha /(p.sigma_CO * sqrtf(2.0f * M_PI))) * expf(-0.5f*exp_CO);
+                    eps_field[j*p.nx + i] = eps_CO;
+                    eps_CO2 = (p.alpha /(p.sigma_CO2 * sqrtf(2.0f * M_PI))) * expf(-0.5f*exp_CO2);
+                };
             };
 
             //update conc
-            Cn[p.idx(0,j,i)] = C[p.idx(0,j,i)] + (p.dt * (Diff_CO - advec_CO - reac_CO)) - (eps_CO * C[p.idx(0,j,i)]);
-            Cn[p.idx(1,j,i)] = C[p.idx(1,j,i)] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2)) - (eps_CO2 * C[p.idx(1,j,i)]);
+            Cn[p.idx(0,j,i)] = C[p.idx(0,j,i)] + (p.dt * (Diff_CO - advec_CO - reac_CO)) - (p.dt * eps_CO * C[p.idx(0,j,i)])*100;
+            Cn[p.idx(1,j,i)] = C[p.idx(1,j,i)] + (p.dt * (Diff_CO2 - advec_CO2 - reac_CO2)) - (p.dt * eps_CO2 * C[p.idx(1,j,i)])*100;
             Cn[p.idx(2,j,i)] = C[p.idx(2,j,i)] + (p.dt * (Diff_O2 - advec_O2 - reac_O2));
 
             

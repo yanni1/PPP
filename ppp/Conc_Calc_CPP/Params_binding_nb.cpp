@@ -26,5 +26,10 @@ NB_MODULE(params_module, m) {
         .def_prop_rw("r2", [](params &self) { return self.r2; }, [](params &self, float value) { self.r2 = value; })
         .def_prop_rw("x", [](params &self) { return self.x; }, [](params &self, std::vector<float> value) { self.x = value; })
         .def_prop_rw("y", [](params &self) { return self.y; }, [](params &self, std::vector<float> value) { self.y = value; })
-        .def_prop_rw("v", [](params &self) { return self.v; }, [](params &self, std::vector<float> value) { self.v = value; });
+        .def_prop_rw("v", [](params &self) { return self.v; }, [](params &self, std::vector<float> value) { self.v = value; })
+        .def_prop_rw("x0_cc", [](params &self) { return self.x0_cc; }, [](params &self, int value) { self.x0_cc = value; })
+        .def_prop_rw("y0_cc", [](params &self) { return self.y0_cc; }, [](params &self, int value) { self.y0_cc = value; })
+        .def_prop_rw("semiMaj", [](params &self) { return self.semiMaj; }, [](params &self, int value) { self.semiMaj = value; })
+        .def_prop_rw("semiMin", [](params &self) { return self.semiMin; }, [](params &self, int value) { self.semiMin = value; })
+        .def_prop_rw("ns", [](params &self) { return self.ns; }, [](params &self, int value) { self.ns = value; });
 }

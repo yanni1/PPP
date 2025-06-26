@@ -40,7 +40,7 @@ public:
     int semiMaj;
     int semiMin;
     //precomputed const fot flat indexing => inline fct
-    int ns = 3;
+    int ns;
     int nxny = 0;
 
     // Constructor (defined in cpp file)

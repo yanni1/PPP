@@ -17,6 +17,7 @@ params::params(int nt) {
     params::nx = params::nxf();
     params::ny = params::nyf();
     params::nxny = nx * ny;
+    params::ns = 3;
     params::nt = nt;
     params::x = params::xf();
     params::y = params::yf();
@@ -42,8 +43,8 @@ int params::nxf() { return(int(Lx/dx)); };
 int params::nyf() { return(int(Ly/dy)); };
 int params::x0_ccf() { return(int(nx/2)); };
 int params::y0_ccf() { return(int((Ly - 0.1)/dy)); };
-int params::semiMajf() { return(int((Lx/2)/dx)); };
-int params::semiMinf() { return(int(0.1/dy)); };
+int params::semiMajf() { return(int(nx/2)); }; //25
+int params::semiMinf() { return(int(0.1/dy)); };  //10
 
 vector<float> params::xf() { 
     vector<float> x(nx+1); 
