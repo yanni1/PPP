@@ -42,9 +42,12 @@ public:
     //precomputed const fot flat indexing => inline fct
     int ns;
     int nxny = 0;
+    //GA params
+    int tau;
+    float rho;
 
     // Constructor (defined in cpp file)
-    params(int nt);
+    params(int nt, int tau, float rho);
     
     // member function declarations (moved to .cpp) due to compiler issues
     int nxf();

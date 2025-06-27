@@ -6,7 +6,7 @@ namespace nb = nanobind;
 
 NB_MODULE(params_module, m) {
     nb::class_<params>(m, "params")
-        .def(nb::init<int>())
+        .def(nb::init<int, int, float>())
         .def_prop_rw("dx", [](params &self) { return self.dx; }, [](params &self, float value) { self.dx = value; })
         .def_prop_rw("dy", [](params &self) { return self.dy; }, [](params &self, float value) { self.dy = value; })
         .def_prop_rw("dt", [](params &self) { return self.dt; }, [](params &self, float value) { self.dt = value; })

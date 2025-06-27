@@ -11,19 +11,19 @@
 #include "Params.h"
 #include "Conc_Calc_CPP.h"
 
-tuple<vector<float>, vector<float>>calc(int nt_given) {
+tuple<vector<float>, vector<float>>calc(params& p) {
     //params 1 keer init en dan altijd als const doorgeven
-    params p = params(nt_given);
-    cout << "nt set to: " << nt_given << '\n' <<     endl;
+
+    cout << "nt set to: " << p.nt << '\n' <<     endl;
    
     //flat concentration vectors [nt, ns, ny, nx]
-    vector<float> Ct(nt_given * p.ns * p.ny * p.nx, 0.0f); //flattened vector values set to 0f (index = (s * ny + y) * nx + x)
+    vector<float> Ct(p.nt * p.ns * p.ny * p.nx, 0.0f); //flattened vector values set to 0f (index = (s * ny + y) * nx + x)
     vector<float> C(p.ns * p.ny * p.nx, 0.0f); //flattened input buffer
     vector<float> Cn(p.ns * p.ny * p.nx, 0.0f); //flattened output buffer
 
     //absorption field visualization
     vector<float> eps_field(p.ny * p.nx, 0.0f);
-    vector<float> eps_series(nt_given * p.ny * p.nx, 0.0f);
+    vector<float> eps_series(p.nt * p.ny * p.nx, 0.0f);
     int eps_size = p.ny * p.nx; //index eps_field
     //C[0] = C_CO
     //C[1] = C_CO2
@@ -33,10 +33,15 @@ tuple<vector<float>, vector<float>>calc(int nt_given) {
     //flattened initial condition
     fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir);
 
-    for (int n = 0; n < nt_given; n++) {
+    for (int n = 0; n < p.nt; n++) {
         if (n % 100){cout << "timestep:" << n << '\n' << endl;};
         fill(eps_field.begin(), eps_field.end(), 0.0f); //reset eps_field
-        CC_CPP(p, C, Cn, eps_field);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
+        //GA logic
+        bool update_O2 = false;
+        if (n % p.tau == 0){
+            update_O2 = true;
+        }
+        CC_CPP(p, C, Cn, eps_field, update_O2);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
         //Store current timestep C into flat Ct and same for eps_field
         int t_offset = n * eps_size;
         #pragma omp parallel for simd
@@ -54,9 +59,6 @@ tuple<vector<float>, vector<float>>calc(int nt_given) {
 
 #ifndef PROFILING
 //make nb module
-//NB_MODULE(Calc_CPP, m) {
-    //m.def("Calc_CPP", &calc, "calculates the conc gradient");
-//};
 NB_MODULE(Calc_CPP, m) {
     m.def("Calc_CPP", &calc, "calculates the conc gradient and eps_map");
 };

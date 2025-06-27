@@ -1,14 +1,19 @@
 # Animation update function
-import Calc_CPP
-import params_module
+import Calc_CPP # pyright: ignore[reportMissingImports]
+import params_module # pyright: ignore[reportMissingImports]
+import Genetic_algo # pyright: ignore[reportMissingImports]
 import matplotlib.pyplot as plt
 from matplotlib.animation import ArtistAnimation
 from matplotlib.patches import Ellipse
 import numpy as np
 
 nt = 5000
-p = params_module.params(nt)
-C_flat, eps_field = Calc_CPP.Calc_CPP(nt)
+#best_rho, best_tau = Genetic_algo.Genetic_algo(nt)
+#print(best_rho, best_tau)
+
+p = params_module.params(nt, 129, 3.65)
+
+C_flat, eps_field = Calc_CPP.Calc_CPP(p)
 
 # C needs to be a 4D array: C[t][s][y][x]
 C = np.array(C_flat, dtype=np.float32).reshape((p.nt, p.ns, p.ny, p.nx))

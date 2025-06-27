@@ -17,20 +17,23 @@ namespace nb = nanobind;
 
 using namespace std;
 
-void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>& eps_field) { //make the passed vectors pointers (buffers)
+void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>& eps_field, bool& update_O2) { //make the passed vectors pointers (buffers)
     
     #pragma omp parallel for collapse(2)
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
 
             // circular O2 vent
-            int x_dist2 = (i-p.a) * (i-p.a);
-            int y_dist2 = (j-p.b) * (j-p.b);
-            int distSq = x_dist2 + y_dist2;
-            if (distSq <= p.r2){
-                int o2_idx = p.idx(2, j, i);
-                C[o2_idx] = p.O2_reservoir;
-            };
+            if (update_O2 == true){
+                int x_dist2 = (i-p.a) * (i-p.a);
+                int y_dist2 = (j-p.b) * (j-p.b);
+                int distSq = x_dist2 + y_dist2;
+                if (distSq <= p.r2){
+                    int o2_idx = p.idx(2, j, i);
+                    C[o2_idx] += p.rho;
+                };
+            }
+            
 
             //diffusion
             float D2x_CO = float((C[p.idx(0,j,i+1)] + C[p.idx(0,j,i-1)] - 2*C[p.idx(0,j,i)]) / (p.dx * p.dx));
@@ -110,7 +113,7 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>&
             Cn[p.idx(2,j,i)] = C[p.idx(2,j,i)] + (p.dt * (Diff_O2 - advec_O2 - reac_O2)); 
         };
     };
-    
+
     //edges
     for (int j = 0; j < p.ny; j++) {
         Cn[p.idx(0,j,0)] = Cn[p.idx(0,j,1)]; //setting vertical edge (left) conc to the same as column next to it

@@ -70,6 +70,22 @@ target_compile_options(Calc_CPP PRIVATE
   $<$<CONFIG:Release>:-O3 -march=native -funroll-loops -Rpass=loop-vectorize>
 )
 
+set(SOURCE_FILES4
+    Params.cpp
+    Params.h
+    Calc_CPP.cpp
+    calc_CPP.h
+    Conc_Calc_CPP.cpp
+    Conc_Calc_CPP.h
+    Reac_Rate_CPP.cpp
+    Reac_Rate_CPP.h
+    Genetic_algo.cpp
+)
+
+# create module 4
+nanobind_add_module(Genetic_algo ${SOURCE_FILES4})
+
+
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
     message(STATUS "OpenMP compile flags: ${OpenMP_CXX_FLAGS}")
@@ -86,6 +102,8 @@ message(STATUS "CMAKE_CURRENT_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
 install(TARGETS Conc_Calc_CPP DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
 install(TARGETS params_module DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
 install(TARGETS Calc_CPP DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
+install(TARGETS Genetic_algo DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/..")
+
 
 # generate/build/install _cmake_build directory
 # > cmake -S . -B _cmake_build
