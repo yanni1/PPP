@@ -8,9 +8,10 @@ from matplotlib.patches import Ellipse
 import numpy as np
 
 nt = 5000
-#best_rho, best_tau = Genetic_algo.Genetic_algo(nt)
-#print(best_rho, best_tau)
-
+'''
+best_rho, best_tau = Genetic_algo.Genetic_algo(nt)
+print(best_rho, best_tau)
+'''
 p = params_module.params(nt, 129, 3.65)
 
 C_flat, eps_field = Calc_CPP.Calc_CPP(p)
@@ -58,5 +59,5 @@ fig.colorbar(ax4.images[0], ax=ax4, orientation='vertical', label='Concentration
 
 ani = ArtistAnimation(fig, ims, 100)
 plt.show()
-
+#'''
 #/Users/yanni/.pyenv/versions/3.12.2/bin/python -m cProfile -o Animation.prof /Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp/Animation_CPP

@@ -13,6 +13,7 @@ namespace nb = nanobind;
 #include <algorithm>
 #include <numeric>
 #include <cmath>
+#include <fstream>
 
 #include "Calc_CPP.h"
 #include "Params.h"
@@ -20,6 +21,7 @@ namespace nb = nanobind;
 using namespace std;
 
 int nt_global;
+ofstream log_file("ga_log.txt");
 
 //Genetic Individual
 struct Individual {
@@ -40,14 +42,20 @@ float evaluate(int tau, float rho) {
     params p = params(nt_global, tau, rho);
     auto [Ct, eps_field] = calc(p); //return ct and eps_field in tuple
     //calc total generated co2
-    int width_CO2 = (p.nt-1) * 1 * p.ny * p.nx;  // species 1 = CO₂
-    auto begin = Ct.begin() + width_CO2; //skipping past conc(CO)
-    auto end = begin + (p.nx * p.ny);
+    float total_CO2 = 0.0f;
+    float total_ABS_CO2 = 0.0f;
+    for (int t = 0; t < p.nt; t++){
+        size_t ct_base   = ((t * p.ns + 1) * p.ny) * p.nx; //index ofset per t
+        size_t eps_base  = t * p.ny * p.nx;
 
-    float total_CO2 = accumulate(begin, end, 0.0f);
+        auto begin_ct  = Ct.begin() + ct_base;
+        auto end_ct    = begin_ct + (p.nx * p.ny);
+        auto begin_eps = eps_field.begin() + eps_base;
 
-    //calc total absorbed CO2
-    float total_ABS_CO2 = accumulate(eps_field.begin(), eps_field.end(), 0.0f);
+        total_CO2 += std::accumulate(begin_ct, end_ct, 0.0f) * p.dt;
+        total_ABS_CO2 += std::inner_product(begin_ct, end_ct, begin_eps, 0.0f) * p.dt; //calculate actual abs. doesn't need an end point for eps => bound to ct
+        log_file << "[t=" << t << "] total_CO2=" << total_CO2 << ", total_ABS_CO2=" << total_ABS_CO2 << ", fitness=" << (total_ABS_CO2 / total_CO2) << "\n";
+    }
     
     if (total_CO2 < 1e-6f) return 0.0f;  // avoid division by near-zero
     return total_ABS_CO2 / total_CO2;
@@ -94,15 +102,18 @@ tuple<int , int> run_ga(int nt_given) {//main
             Individual child = mutate(parent);
             child.fitness = evaluate(child.tau, child.rho);
             next_gen[i] = child;
+            log_file << "gen " << gen << ", child " << i << ", tau = " << child.tau << ", rho = " << child.rho << ", fitness = " << child.fitness << "\n";
         }
 
         population = std::move(next_gen);
+        
 
-        cout << "Gen " << gen + 1 << " Best fitness = " << top3[0].fitness << "  (tau = " << top3[0].tau << ", rho = " << top3[0].rho << ")\n";
+        log_file << "Gen " << gen + 1 << " Best fitness = " << top3[0].fitness << "  (tau = " << top3[0].tau << ", rho = " << top3[0].rho << ")\n";
     }
 
-    std::cout << "\n Final best after " << generations << " generations:\n";
-    std::cout << "Fitness = " << best_all_time.fitness << "  |  tau = " << best_all_time.tau << "  |  rho = " << best_all_time.rho << "\n";
+    log_file << "\n Final best after " << generations << " generations:\n";
+    log_file << "Fitness = " << best_all_time.fitness << "  |  tau = " << best_all_time.tau << "  |  rho = " << best_all_time.rho << "\n";
+    log_file.close();
 
 
     return {best_all_time.tau, best_all_time.rho};

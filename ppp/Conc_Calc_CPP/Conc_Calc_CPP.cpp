@@ -14,23 +14,27 @@ namespace nb = nanobind;
 #include <iostream>
 #include "Params.h"
 #include "Reac_Rate_CPP.h"
+#include <fstream>
 
 using namespace std;
 
 void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>& eps_field, bool& update_O2) { //make the passed vectors pointers (buffers)
-    
+    ofstream log_file("O2vent_log.txt");
     #pragma omp parallel for collapse(2)
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
 
             // circular O2 vent
             if (update_O2 == true){
+                log_file << "update_O2 was true and C[o2_idx] is now: ";
                 int x_dist2 = (i-p.a) * (i-p.a);
                 int y_dist2 = (j-p.b) * (j-p.b);
                 int distSq = x_dist2 + y_dist2;
                 if (distSq <= p.r2){
                     int o2_idx = p.idx(2, j, i);
                     C[o2_idx] += p.rho;
+                    log_file << C[o2_idx]<<'\n';
+
                 };
             }
             
