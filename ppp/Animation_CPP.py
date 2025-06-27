@@ -44,12 +44,14 @@ for t in range(nt):
         im1 = ax1.imshow(con[0], animated=True, origin='lower', extent=extent, aspect='equal')
         im2 = ax2.imshow(con[1], animated=True, origin='lower', extent=extent, aspect='equal')
         im3 = ax3.imshow(con[2], animated=True, origin='lower', extent=extent, aspect='equal')
-        im4 = ax4.imshow(eps, animated=True, origin='lower', extent=extent, aspect='equal')
+        eps_rescaled = (eps - np.min(eps)) / (np.max(eps) - np.min(eps) + 1e-8)
+        im4 = ax4.imshow(eps_rescaled, cmap='inferno', origin='lower', extent=extent, aspect='equal')
+
         ims.append([im1, im2, im3, im4])
     else: 
         continue
 
-fig.colorbar(ax3.images[0], ax=ax3, orientation='vertical', label='Concentration')
+fig.colorbar(ax4.images[0], ax=ax4, orientation='vertical', label='Concentration')
 
 ani = ArtistAnimation(fig, ims, 100)
 plt.show()

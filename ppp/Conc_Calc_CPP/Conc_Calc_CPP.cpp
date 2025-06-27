@@ -26,6 +26,8 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>&
     #pragma omp parallel for collapse(2)
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
+            float eps_CO = 0.0f; //debug
+            float eps_CO2 = 0.0f; //debug
             // circular O2 vent
             int x_dist2 = (i-p.a) * (i-p.a);
             int y_dist2 = (j-p.b) * (j-p.b);
@@ -65,8 +67,9 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>&
             float reac_O2 = float(reac_CO);
 
             //carbon capture ellipse
-            float eps_CO = 0;
-            float eps_CO2 = 0;
+            eps_CO = 0.0f;
+            eps_CO2 = 0.0f;
+            const float eps_threshold = 0.0001f;
             if (((((i-p.x0_cc)*(i-p.x0_cc))/(p.semiMaj*p.semiMaj))+(((j-p.y0_cc)*(j-p.y0_cc))/(p.semiMin*p.semiMin))) <= 1.00f){
                 float sum_C = C[p.idx(0, j, i)] + C[p.idx(1, j, i)];
                 if (sum_C > 1e-8f) { //add div by 0 protection => fix weird behaviour
@@ -74,10 +77,32 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>&
                     float C_norm_CO2 = C[p.idx(1, j, i)]/sum_C;
                     float exp_CO = ((C_norm_CO - p.mu_CO) / p.sigma_CO) * ((C_norm_CO - p.mu_CO) / p.sigma_CO);
                     float exp_CO2 = ((C_norm_CO2 - p.mu_CO2) / p.sigma_CO2) * ((C_norm_CO2 - p.mu_CO2) / p.sigma_CO2);
-                    eps_CO = (p.alpha /(p.sigma_CO * sqrtf(2.0f * M_PI))) * expf(-0.5f*exp_CO);
-                    eps_field[j*p.nx + i] = eps_CO;
-                    eps_CO2 = (p.alpha /(p.sigma_CO2 * sqrtf(2.0f * M_PI))) * expf(-0.5f*exp_CO2);
+                    float eps_CO_cond = (p.alpha /(p.sigma_CO * sqrtf(2.0f * M_PI))) * expf(-0.5f*exp_CO);
+                    float eps_CO2_cond = (p.alpha /(p.sigma_CO2 * sqrtf(2.0f * M_PI))) * expf(-0.5f*exp_CO2);
+
+                    if (eps_CO_cond >= eps_threshold) {
+                        eps_CO = eps_CO_cond;
+                        eps_field[j * p.nx + i] = eps_CO;
+                    }else {
+                        eps_CO = 0.0f;
+                        eps_field[j * p.nx + i] = 0.0f;
+                    }    
+                    
+                    if (eps_CO_cond >= eps_threshold) {
+                        eps_CO = eps_CO_cond;
+                    } else {
+                        eps_CO2 = 0.0f;
+                    }    
+                    
+                } else {
+                    eps_CO = 0;
+                    eps_CO2 = 0;
+                    eps_field[j*p.nx + i] = 0; //zeroeing eps to prevent "stale" values => data left in mem from previous steps
                 };
+            } else {
+                eps_CO = 0;
+                eps_CO2 = 0;
+                eps_field[j*p.nx + i] = 0; 
             };
 
             //update conc

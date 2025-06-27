@@ -27,9 +27,9 @@ params::params(int nt) {
     params::r2 = params::r2f();
     params::v = params::vf();
     params::alpha = 0.9;
-    params::mu_CO = 0.4;
+    params::mu_CO = 0.4; 
     params::mu_CO2 = 0.6;
-    params::sigma_CO = 0.5;
+    params::sigma_CO = 0.5; //0.5
     params::sigma_CO2 = 0.5;
     params::x0_cc = params::x0_ccf();
     params::y0_cc = params::y0_ccf();

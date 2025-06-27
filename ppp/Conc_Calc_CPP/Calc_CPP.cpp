@@ -35,6 +35,7 @@ tuple<vector<float>, vector<float>>calc(int nt_given) {
 
     for (int n = 0; n < nt_given; n++) {
         if (n % 100){cout << "timestep:" << n << '\n' << endl;};
+        fill(eps_field.begin(), eps_field.end(), 0.0f); //reset eps_field
         CC_CPP(p, C, Cn, eps_field);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
         //Store current timestep C into flat Ct
         int t_offset = n * spatial_size;

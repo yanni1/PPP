@@ -40,9 +40,9 @@ set(SOURCE_FILES1
 nanobind_add_module(Conc_Calc_CPP ${SOURCE_FILES1})
 
 # set omp flags for module 1
-target_compile_options(Conc_Calc_CPP PRIVATE
-  $<$<CONFIG:Release>:-O3 -march=native -funroll-loops -Rpass=loop-vectorize>
-)
+#target_compile_options(Conc_Calc_CPP PRIVATE
+ # $<$<CONFIG:Release>:-O3 -march=native -funroll-loops -Rpass=loop-vectorize>
+#)
 
 set(SOURCE_FILES2
     Params.cpp
@@ -66,9 +66,9 @@ set(SOURCE_FILES3
 # create module 3
 nanobind_add_module(Calc_CPP ${SOURCE_FILES3})
 
-target_compile_options(Calc_CPP PRIVATE
-  $<$<CONFIG:Release>:-O3 -march=native -funroll-loops -Rpass=loop-vectorize>
-)
+#target_compile_options(Calc_CPP PRIVATE
+ # $<$<CONFIG:Release>:-O3 -march=native -funroll-loops -Rpass=loop-vectorize>
+#)
 
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
