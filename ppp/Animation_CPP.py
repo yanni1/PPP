@@ -22,12 +22,13 @@ ax2.set_title("CO₂")
 ax3.set_title("O₂")
 ax4.set_title("ε_CO (absorption)")
 ims = []
-# Physical center and axes (convert from index to spatial coordinates)
+
+# ellips
 x_center = p.x0_cc
 y_center = p.y0_cc
 width = 2 * p.semiMaj
 height = 2 * p.semiMin
-print(x_center)
+
 
 #ellipse patches
 ell1 = Ellipse((x_center, y_center), width, height, edgecolor='orange', facecolor='none', lw=1.5, linestyle='--')
@@ -44,9 +45,7 @@ for t in range(nt):
         im1 = ax1.imshow(con[0], animated=True, origin='lower', extent=extent, aspect='equal')
         im2 = ax2.imshow(con[1], animated=True, origin='lower', extent=extent, aspect='equal')
         im3 = ax3.imshow(con[2], animated=True, origin='lower', extent=extent, aspect='equal')
-        eps_rescaled = (eps - np.min(eps)) / (np.max(eps) - np.min(eps) + 1e-8)
-        im4 = ax4.imshow(eps_rescaled, cmap='inferno', origin='lower', extent=extent, aspect='equal')
-
+        im4 = ax4.imshow(eps, cmap='inferno', origin='lower', extent=extent, aspect='equal')
         ims.append([im1, im2, im3, im4])
     else: 
         continue
