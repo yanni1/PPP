@@ -21,10 +21,10 @@ tuple<vector<float>, vector<float>>calc(int nt_given) {
     vector<float> C(p.ns * p.ny * p.nx, 0.0f); //flattened input buffer
     vector<float> Cn(p.ns * p.ny * p.nx, 0.0f); //flattened output buffer
 
-    //dubug
+    //absorption field visualization
     vector<float> eps_field(p.ny * p.nx, 0.0f);
     vector<float> eps_series(nt_given * p.ny * p.nx, 0.0f);
-    int spatial_size = p.ny * p.nx;
+    int eps_size = p.ny * p.nx; //index eps_field
     //C[0] = C_CO
     //C[1] = C_CO2
     //C[2] = C_O2
@@ -37,10 +37,10 @@ tuple<vector<float>, vector<float>>calc(int nt_given) {
         if (n % 100){cout << "timestep:" << n << '\n' << endl;};
         fill(eps_field.begin(), eps_field.end(), 0.0f); //reset eps_field
         CC_CPP(p, C, Cn, eps_field);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
-        //Store current timestep C into flat Ct
-        int t_offset = n * spatial_size;
+        //Store current timestep C into flat Ct and same for eps_field
+        int t_offset = n * eps_size;
         #pragma omp parallel for simd
-        for (int idx = 0; idx < spatial_size; idx++) {
+        for (int idx = 0; idx < eps_size; idx++) {
             eps_series[t_offset + idx] = eps_field[idx];
         };
         #pragma omp parallel for simd

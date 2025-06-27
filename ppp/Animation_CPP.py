@@ -29,7 +29,6 @@ y_center = p.y0_cc
 width = 2 * p.semiMaj
 height = 2 * p.semiMin
 
-
 #ellipse patches
 ell1 = Ellipse((x_center, y_center), width, height, edgecolor='orange', facecolor='none', lw=1.5, linestyle='--')
 ell2 = Ellipse((x_center, y_center), width, height, edgecolor='orange', facecolor='none', lw=1.5, linestyle='--')
