@@ -8,11 +8,11 @@ from matplotlib.patches import Ellipse
 import numpy as np
 
 nt = 5000
-'''
+#'''
 best_rho, best_tau = Genetic_algo.Genetic_algo(nt)
 print(best_rho, best_tau)
-'''
 #'''
+'''
 p = params_module.params(nt, 5, 7.94944) #25, 3,65 works this is from frist GA run 5, 7.94944
 
 C_flat, eps_field = Calc_CPP.Calc_CPP(p)

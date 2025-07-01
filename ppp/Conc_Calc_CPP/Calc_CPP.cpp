@@ -15,7 +15,7 @@ namespace nb = nanobind;
 tuple<vector<float>, vector<float>>calc(params& p) {
     //params 1 keer init en dan altijd als const doorgeven
 
-    cout << "nt set to: " << p.nt << '\n' <<     endl;
+    cout << "nt set to: " << p.nt << '\n' << endl;
    
     //flat concentration vectors [nt, ns, ny, nx]
     vector<float> Ct(p.nt * p.ns * p.ny * p.nx, 0.0f); //flattened vector values set to 0f (index = (s * ny + y) * nx + x)
@@ -35,17 +35,17 @@ tuple<vector<float>, vector<float>>calc(params& p) {
     fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir);
 
     for (int n = 0; n < p.nt; n++) {
-        //if (n % 100){cout << "timestep:" << n << '\n' << endl;};
+        if (n % 1000 == 0){cout << "timestep:" << n << '\n' << endl;};
         fill(eps_field.begin(), eps_field.end(), 0.0f); //reset eps_field
         //GA logic
         int update_O2 = 0;
         if ( n == 0){
             update_O2 = 1;
-            cout << "update_O2: " << update_O2 << "at n= "<< n << "\n" << endl;
+            //cout << "update_O2: " << update_O2 << "at n= "<< n << "\n" << endl;
 
         } else if (n % p.tau == 0) {
             update_O2 = 2;
-            cout << "update_O2: " << update_O2 << "at n= "<< n <<"\n" << endl;
+            //cout << "update_O2: " << update_O2 << "at n= "<< n <<"\n" << endl;
         };
         CC_CPP(p, C, Cn, eps_field, update_O2);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
         //Store current timestep C into flat Ct and same for eps_field
