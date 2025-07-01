@@ -24,6 +24,20 @@ using namespace std;
 
 int nt_global;
 
+static struct {
+    int tau_min = 1;
+    int tau_max = 100;
+
+    float rho_min = -20.0f;
+    float rho_max = 20.0f;
+
+    float rho_lower_clamp = 0.1f;
+    float rho_upper_clamp = 1000.0f;
+
+    int tau_clamp_min = 1;
+    int tau_clamp_max = 100;
+} cfg;
+
 //mem limiter
 void limit_memory(std::size_t max_bytes) {
     struct rlimit rl;
@@ -38,13 +52,6 @@ struct Individual {
     float rho;
     float fitness;
 };
-
-//Global RNG setup
-mt19937 rng(random_device{}()); //fixed seed for better reproducability
-uniform_int_distribution<int> tau_dist(5, 200);
-uniform_real_distribution<float> rho_dist(0.1f, 5.0f);
-uniform_int_distribution<int> tau_mut_dist(-10, 10);
-uniform_real_distribution<float> rho_mut_dist(-0.2f, 0.2f);
 
 //fitness evaluation function
 float evaluate(int tau, float rho, ofstream& log_file) {
@@ -88,20 +95,36 @@ float evaluate(int tau, float rho, ofstream& log_file) {
 
     
     if (total_CO2 < 1e-6f) return 0.0f;  // avoid division by near-zero
+    if (rho <= 0.05f) {
+        #pragma omp critical
+        {
+        log_file << "[DISCOURAGED] rho too small => forcing fitness = 0\n";
+        }
+    return 0.0f;
+    }
     return total_ABS_CO2 / total_CO2;
 }
 
 Individual mutate(const Individual& parent) {
     thread_local mt19937 local_rng(random_device{}());
-    thread_local uniform_int_distribution<int> tau_dist(-10, 10);
-    thread_local uniform_real_distribution<float> rho_dist(-0.2f, 0.2f);
+    thread_local uniform_int_distribution<int> tau_dist(cfg.tau_min, cfg.tau_max);
+    thread_local uniform_real_distribution<float> rho_dist(cfg.rho_min, cfg.rho_max);
 
     Individual child = parent;
-    child.tau = clamp(child.tau + tau_dist(local_rng), 5, 200);
-    child.rho = clamp(child.rho + rho_dist(local_rng), 0.0f, 10.0f);
+    child.tau = clamp(child.tau + tau_dist(local_rng), cfg.tau_clamp_min, cfg.tau_clamp_max);
+    child.rho = clamp(child.rho + rho_dist(local_rng), cfg.rho_lower_clamp, cfg.rho_upper_clamp);
     return child;
 };
 
+Individual crossover(const Individual& a, const Individual& b) {
+    thread_local mt19937 local_rng(random_device{}());
+    Individual child;
+    //randomly inherit tau from either parent
+    child.tau = (local_rng() % 2 == 0) ? a.tau : b.tau;
+    //crossover
+    child.rho = 0.5f * (a.rho + b.rho);
+    return child;
+}   
 
 tuple<int , int> run_ga(int nt_given) {//main
     limit_memory(15L * 1024 * 1024 * 1024); // 15 GB cap
@@ -115,7 +138,10 @@ tuple<int , int> run_ga(int nt_given) {//main
      // Step 1: Initial random population
     #pragma omp parallel for shared(population)
     for (int i = 0; i < population_size; i++) {
-        Individual ind{tau_dist(rng), rho_dist(rng), 0.0f};
+        thread_local mt19937 local_rng(random_device{}());
+        thread_local uniform_int_distribution<int> tau_dist(cfg.tau_min, cfg.tau_max);
+        thread_local uniform_real_distribution<float> rho_dist(cfg.rho_min, cfg.rho_max);
+        Individual ind{tau_dist(local_rng), rho_dist(local_rng), 0.0f};
         ind.fitness = evaluate(ind.tau, ind.rho, log_file);
         #pragma omp critical
         {
@@ -137,13 +163,15 @@ tuple<int , int> run_ga(int nt_given) {//main
         }
 
         //Step 3: Create new generation by mutating top 3
-        std::vector<Individual> next_gen(population_size);
+        vector<Individual> next_gen(population_size);
         #pragma omp parallel for shared(next_gen, log_file) firstprivate(gen, top3) // 
         for (int i = 0; i < population_size; i++) {
             const Individual& parent = top3[i % 3]; //i % 3 gives 0, 1, 2, 0, 1, 2...
-            Individual child = mutate(parent);
+            const Individual& parent2 = top3[(i + 1) % 3];
+            Individual child_cross = crossover(parent, parent2);
+            Individual child = mutate(child_cross);
             child.fitness = evaluate(child.tau, child.rho, log_file);
-            #pragma omp critical 
+            #pragma omp critical    
             {
             next_gen[i] = child;
             }
