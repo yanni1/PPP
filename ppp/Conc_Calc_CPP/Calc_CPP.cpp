@@ -3,6 +3,7 @@
 #include <nanobind/ndarray.h> // add support for multi-dimensional arrays
 #include <nanobind/stl/vector.h>
 #include <nanobind/stl/tuple.h> 
+namespace nb = nanobind;
 #endif
 
 #include <vector>
@@ -34,13 +35,18 @@ tuple<vector<float>, vector<float>>calc(params& p) {
     fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir);
 
     for (int n = 0; n < p.nt; n++) {
-        if (n % 100){cout << "timestep:" << n << '\n' << endl;};
+        //if (n % 100){cout << "timestep:" << n << '\n' << endl;};
         fill(eps_field.begin(), eps_field.end(), 0.0f); //reset eps_field
         //GA logic
-        bool update_O2 = false;
-        if (n % p.tau == 0){
-            update_O2 = true;
-        }
+        int update_O2 = 0;
+        if ( n == 0){
+            update_O2 = 1;
+            cout << "update_O2: " << update_O2 << "at n= "<< n << "\n" << endl;
+
+        } else if (n % p.tau == 0) {
+            update_O2 = 2;
+            cout << "update_O2: " << update_O2 << "at n= "<< n <<"\n" << endl;
+        };
         CC_CPP(p, C, Cn, eps_field, update_O2);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
         //Store current timestep C into flat Ct and same for eps_field
         int t_offset = n * eps_size;
@@ -60,6 +66,6 @@ tuple<vector<float>, vector<float>>calc(params& p) {
 #ifndef PROFILING
 //make nb module
 NB_MODULE(Calc_CPP, m) {
-    m.def("Calc_CPP", &calc, "calculates the conc gradient and eps_map");
+    m.def("Calc_CPP", &calc, nb::rv_policy::move, "calculates the conc gradient and eps_map");
 };
 #endif

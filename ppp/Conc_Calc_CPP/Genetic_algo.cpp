@@ -41,6 +41,18 @@ uniform_real_distribution<float> rho_mut_dist(-0.2f, 0.2f);
 float evaluate(int tau, float rho) {
     params p = params(nt_global, tau, rho);
     auto [Ct, eps_field] = calc(p); //return ct and eps_field in tuple
+    //stability checks
+    // NaNs or Infs in Ct or eps_field
+    bool is_unstable = !std::all_of(Ct.begin(), Ct.end(), [](float x) { return std::isfinite(x); }) || !std::all_of(eps_field.begin(), eps_field.end(), [](float x) { return std::isfinite(x); });
+    //overflow detection
+    float max_Ct = *std::max_element(Ct.begin(), Ct.end());
+    if (max_Ct > 1e6f) is_unstable = true;
+    //abort when unstable
+    if (is_unstable) {
+        log_file << "[UNSTABLE] tau = " << tau << ", rho = " << rho << " → fitness = 0 (due to numerical instability)\n";
+        return 0.0f;
+    }
+    //performace eval
     //calc total generated co2
     float total_CO2 = 0.0f;
     float total_ABS_CO2 = 0.0f;

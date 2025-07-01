@@ -18,22 +18,34 @@ namespace nb = nanobind;
 
 using namespace std;
 
-void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>& eps_field, bool& update_O2) { //make the passed vectors pointers (buffers)
-    ofstream log_file("O2vent_log.txt");
+void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>& eps_field, int& update_O2) { //make the passed vectors pointers (buffers)
+    float total_O2_added = 0;
     #pragma omp parallel for collapse(2)
     for (int j = 1; j < p.ny-1; j++){
         for (int i = 1; i < p.nx-1; i++){
+            
+            // o2 start cond.
+            if (update_O2 == 1){
+                int x_dist2 = (i-p.a) * (i-p.a);
+                int y_dist2 = (j-p.b) * (j-p.b);
+                int distSq = x_dist2 + y_dist2;
+                if (distSq <= p.r2){
+                    int o2_idx = p.idx(2, j, i);
+                    C[o2_idx] = p.O2_reservoir;
+                    total_O2_added += p.O2_reservoir;
 
-            // circular O2 vent
-            if (update_O2 == true){
-                log_file << "update_O2 was true and C[o2_idx] is now: ";
+                };
+            }
+
+            // o2 pump
+            if (update_O2 == 2){
                 int x_dist2 = (i-p.a) * (i-p.a);
                 int y_dist2 = (j-p.b) * (j-p.b);
                 int distSq = x_dist2 + y_dist2;
                 if (distSq <= p.r2){
                     int o2_idx = p.idx(2, j, i);
                     C[o2_idx] += p.rho;
-                    log_file << C[o2_idx]<<'\n';
+                    total_O2_added += p.rho;
 
                 };
             }
@@ -129,8 +141,20 @@ void CC_CPP(const params& p, vector<float>& C, vector<float>& Cn, vector<float>&
     }
     //re set CO boundary condition
     fill(C.begin() + p.idx(0, 0, 0), C.begin() + p.idx(0, 0, 0) + p.nx, p.CO_reservoir); //fill O's from 0 to 0+ nx (first row of species 0 (CO))
+    //debug
+    if (update_O2 && total_O2_added > 0.0f) {
+        ofstream log_file("O2vent_log.txt", ios::app);
+        log_file << "Injected total O₂ = " << total_O2_added << "\n";
+    };
+    #pragma omp parallel for collapse(2)
+    for (int j = 0; j < p.ny; ++j){
+        for (int i = 0; i < p.nx; ++i) {
+            assert(std::isfinite(eps_field[j * p.nx + i]));
+            assert(eps_field[j * p.nx + i] >= 0.0f);
+        };
+    };
     return;
-}
+};
 
 #ifndef PROFILING
 //make nb module
