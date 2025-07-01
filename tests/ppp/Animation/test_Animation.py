@@ -5,16 +5,16 @@
 import sys
 sys.path.insert(0,'.')
 
-import ppp.Animation as Animation
+import ppp.calc_starter as calc_starter
 
 
 def test_hello_default_arg():
-    result = Animation.hello()
+    result = calc_starter.hello()
     assert result == "Hello world!"
 
 
 def test_hello_me():
-    result = Animation.hello('me')
+    result = calc_starter.hello('me')
     assert result == "Hello me!"
 
 

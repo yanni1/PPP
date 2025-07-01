@@ -15,7 +15,7 @@ namespace nb = nanobind;
 #include <cmath>
 #include <fstream>
 
-#include <sys/resource.h> //parallelisation and optimization too good pc crashed at over temp.
+#include <sys/resource.h>
 
 #include "Calc_CPP.h"
 #include "Params.h"
@@ -108,7 +108,7 @@ tuple<int , int> run_ga(int nt_given) {//main
     nt_global = nt_given;
     ofstream log_file("ga_log.txt");
     const int population_size = 10;
-    const int generations = 25;
+    const int generations = 50;
 
     vector<Individual> population(population_size);
 
@@ -146,14 +146,10 @@ tuple<int , int> run_ga(int nt_given) {//main
             #pragma omp critical 
             {
             next_gen[i] = child;
-            log_file << "gen " << gen << ", child " << i << ", tau = " << child.tau << ", rho = " << child.rho << ", fitness = " << child.fitness << "\n";
             }
         }
 
         population = std::move(next_gen);
-        
-
-        log_file << "Gen " << gen + 1 << " Best fitness = " << top3[0].fitness << "  (tau = " << top3[0].tau << ", rho = " << top3[0].rho << ")\n";
     }
 
     log_file << "\n Final best after " << generations << " generations:\n";
