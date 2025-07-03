@@ -118,15 +118,16 @@ Individual mutate(const Individual& parent) {
 
 Individual crossover(const Individual& a, const Individual& b) {
     thread_local mt19937 local_rng(random_device{}());
+    uniform_real_distribution<float> dist(0.0f, 1.0f);
     Individual child;
-    //randomly inherit tau from either parent
-    child.tau = (local_rng() % 2 == 0) ? a.tau : b.tau;
     //crossover
-    child.rho = 0.5f * (a.rho + b.rho);
+    float ratio = dist(local_rng);
+    child.tau = static_cast<int>(ratio * a.tau + (1.0f - ratio) * b.tau);
+    child.rho = ratio * a.rho + (1.0f - ratio) * b.rho;
     return child;
 }   
 
-tuple<int , int> run_ga(int nt_given) {//main
+tuple<int , float> run_ga(int nt_given) {//main
     limit_memory(15L * 1024 * 1024 * 1024); // 15 GB cap
     nt_global = nt_given;
     ofstream log_file("ga_log.txt");
@@ -140,7 +141,7 @@ tuple<int , int> run_ga(int nt_given) {//main
     for (int i = 0; i < population_size; i++) {
         thread_local mt19937 local_rng(random_device{}());
         thread_local uniform_int_distribution<int> tau_dist(cfg.tau_min, cfg.tau_max);
-        thread_local uniform_real_distribution<float> rho_dist(cfg.rho_min, cfg.rho_max);
+        thread_local uniform_real_distribution<float> rho_dist(0.1, cfg.rho_max); //no inital neg rho allowed
         Individual ind{tau_dist(local_rng), rho_dist(local_rng), 0.0f};
         ind.fitness = evaluate(ind.tau, ind.rho, log_file);
         #pragma omp critical
@@ -162,7 +163,7 @@ tuple<int , int> run_ga(int nt_given) {//main
             best_all_time = top3[0];
         }
 
-        //Step 3: Create new generation by mutating top 3
+        //Step 3: new gen
         vector<Individual> next_gen(population_size);
         #pragma omp parallel for shared(next_gen, log_file) firstprivate(gen, top3) // 
         for (int i = 0; i < population_size; i++) {

@@ -11,8 +11,8 @@ from calc_starter import get_best_params
 nt = 5000
 
 tau, rho = get_best_params(nt)
-print( tau,rho)
-p = params_module.params(nt, tau, rho) #25, 3,65 works this is from frist GA run 5, 7.94944
+print("GA found best tau, rho to be: ",tau,rho)
+p = params_module.params(nt, tau, rho)
 
 C_flat, eps_field = Calc_CPP.Calc_CPP(p)
 
@@ -59,5 +59,3 @@ fig.colorbar(ax4.images[0], ax=ax4, orientation='vertical', label='Concentration
 
 ani = ArtistAnimation(fig, ims, 100)
 plt.show()
-#'''
-#/Users/yanni/.pyenv/versions/3.12.2/bin/python -m cProfile -o Animation.prof /Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp/Animation_CPP

@@ -1,377 +1,302 @@
-[UNSTABLE] tau = 96, rho = 15.0767 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 32, rho = -3.18256 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 61, rho = 13.8631 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 7, rho = -19.3886 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 58, rho = -4.13271 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 59, rho = -14.7006 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 45, rho = -19.057 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 65, rho = -10.8586 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 89, rho = -10.5188 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 64, rho = 7.85759 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 66, rho = 16.1297 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.99041 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 42, rho = 10.8535 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 91, rho = 5.99192 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 70, rho = 5.11474 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 92, rho = 3.37995 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 70, rho = 19.3643 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 94, rho = 5.10138 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 45, rho = 4.04767 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=29.2143, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=17.9193, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=16.9471, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=71.1097, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=156.595, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=180.721, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=482.373, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=1048.75, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=1173.61, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=1301.35, total_ABS_CO2=0.00834092, fitness=6.40945e-06
+[t=3000] total_CO2=2876.6, total_ABS_CO2=0.022298, fitness=7.75152e-06
+[t=3000] total_CO2=3202.61, total_ABS_CO2=0.0239287, fitness=7.47162e-06
+[t=4000] total_CO2=2537.09, total_ABS_CO2=10.6927, fitness=0.00421455
+[t=4000] total_CO2=5725.61, total_ABS_CO2=22.5737, fitness=0.00394259
+[t=4000] total_CO2=6372.33, total_ABS_CO2=23.3778, fitness=0.00366864
+[UNSTABLE] tau = 100, rho = 35.5889 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 53, rho = 22.9961 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 90, rho = 13.341 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 84, rho = 3.14135 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 66, rho = 26.1583 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.5831 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 42, rho = 17.3447 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=181.78, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=109.169, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=103.04, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=20.3386, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=465.556, total_ABS_CO2=0.00506276, fitness=1.08747e-05
+[t=1000] total_CO2=135.75, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=124.275, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=276.436, total_ABS_CO2=0.0042962, fitness=1.55414e-05
-[t=3000] total_CO2=260.614, total_ABS_CO2=0.00423129, fitness=1.62358e-05
-[t=1000] total_CO2=15.7386, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=20.8785, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=931.601, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=874.355, total_ABS_CO2=4.08499, fitness=0.004672
-[t=3000] total_CO2=315.461, total_ABS_CO2=0.00445569, fitness=1.41244e-05
-[t=4000] total_CO2=513.885, total_ABS_CO2=2.70612, fitness=0.00526601
-[t=2000] total_CO2=127.856, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=95.5983, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=483.886, total_ABS_CO2=2.59666, fitness=0.00536626
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=2566.86, total_ABS_CO2=0.0192872, fitness=7.51392e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=587.958, total_ABS_CO2=2.98044, fitness=0.00506913
-[t=3000] total_CO2=324.763, total_ABS_CO2=0.0044936, fitness=1.38365e-05
-[t=3000] total_CO2=241.504, total_ABS_CO2=0.00415286, fitness=1.71958e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=605.625, total_ABS_CO2=3.04671, fitness=0.00503068
-[t=4000] total_CO2=447.739, total_ABS_CO2=2.46615, fitness=0.00550801
-[UNSTABLE] tau = 100, rho = 11.4371 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 81, rho = 13.0323 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.28709 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.44736 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.0607 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.5267 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=5109.14, total_ABS_CO2=20.92, fitness=0.00409463
+[UNSTABLE] tau = 100, rho = 17.8453 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 12.6746 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 70, rho = 9.4015 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.7489 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=23.5503, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=1000] total_CO2=19.7878, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=144.807, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=120.9, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=368.785, total_ABS_CO2=0.00467237, fitness=1.26696e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=306.73, total_ABS_CO2=0.00442003, fitness=1.44102e-05
-[t=4000] total_CO2=689.405, total_ABS_CO2=3.36453, fitness=0.00488034
-[t=4000] total_CO2=571.35, total_ABS_CO2=2.91845, fitness=0.00510799
-[UNSTABLE] tau = 100, rho = 19.3621 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.2814 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 78, rho = 8.53404 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.7882 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=75.8577, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=521.482, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=1418.06, total_ABS_CO2=0.00848962, fitness=5.98676e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2781.02, total_ABS_CO2=11.5264, fitness=0.00414465
-[UNSTABLE] tau = 100, rho = 15.7137 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.661 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.16048 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 12.5324 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.60929 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 20.2881 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=74.5279, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=511.439, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1388.46, total_ABS_CO2=0.00834128, fitness=6.00759e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=2719.45, total_ABS_CO2=11.2803, fitness=0.00414803
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 5.30571 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.5027 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.04266 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 14.8906 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 11.3243 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.34843 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=54.0826, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=88.8709, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=357.556, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=618.598, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=943.45, total_ABS_CO2=0.00647781, fitness=6.86609e-06
-[t=3000] total_CO2=1703.38, total_ABS_CO2=0.0101524, fitness=5.96014e-06
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=1809.38, total_ABS_CO2=7.6517, fitness=0.00422891
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=3373.55, total_ABS_CO2=13.9114, fitness=0.00412366
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 2.43612 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.008 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.30642 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 6.83309 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.46304 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.77587 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 10.137 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.53423 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.58937 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 15.4521 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.25726 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.31694 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.0693 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.0478 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.947 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.4014 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.1615 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.55382 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 19.9652 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.16699 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 15.3768 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.3391 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.10726 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 7.84432 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.67689 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.0434 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=57.013, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=60.0053, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=379.339, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=401.737, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=1005.01, total_ABS_CO2=0.00670482, fitness=6.67141e-06
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=1068.88, total_ABS_CO2=0.00694835, fitness=6.50058e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=1932.95, total_ABS_CO2=8.14453, fitness=0.00421352
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=2062.03, total_ABS_CO2=8.65931, fitness=0.0041994
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 7.63669 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 9.18167 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.28604 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.6695 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.56914 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.69609 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.1814 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=22.0917, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=135.896, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=345.773, total_ABS_CO2=0.00446723, fitness=1.29195e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=645.834, total_ABS_CO2=3.14469, fitness=0.00486919
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 18.1843 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.20297 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 20.061 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.6318 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.84015 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.61508 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.32457 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 6.70006 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.444 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.54423 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.72146 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.0183 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.61492 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=26.9945, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=167.74, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=15.3412, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=428.915, total_ABS_CO2=0.00473938, fitness=1.10497e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=93.2373, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=804.552, total_ABS_CO2=3.72483, fitness=0.0046297
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=235.489, total_ABS_CO2=0.00410421, fitness=1.74285e-05
-[t=4000] total_CO2=436.432, total_ABS_CO2=2.41446, fitness=0.00553228
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 10.7688 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.1444 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.0117 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.6343 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.2504 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.5433 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.55787 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.2764 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=83.8803, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=581.746, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=3000] total_CO2=1595.69, total_ABS_CO2=0.00947102, fitness=5.93539e-06
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=85.3569, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=592.739, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=3150.66, total_ABS_CO2=13.0102, fitness=0.00412937
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1627.95, total_ABS_CO2=0.00966802, fitness=5.93876e-06
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=3217.63, total_ABS_CO2=13.2806, fitness=0.00412746
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 7.57688 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 9.4937 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.14542 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.47444 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.46247 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.3529 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.01585 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 11.5435 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.32565 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
@@ -380,279 +305,310 @@
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 10.6211 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=71.8502, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=491.191, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1328.86, total_ABS_CO2=0.00805419, fitness=6.06096e-06
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 12.733 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.86245 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=4000] total_CO2=2595.71, total_ABS_CO2=10.7865, fitness=0.00415551
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=71.2353, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=486.538, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=1315.19, total_ABS_CO2=0.00799038, fitness=6.07544e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2567.38, total_ABS_CO2=10.6735, fitness=0.00415736
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 19.7542 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.953 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 12.2594 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=58.2435, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=388.533, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=1031.16, total_ABS_CO2=0.00680346, fitness=6.59789e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=1985.69, total_ABS_CO2=8.35486, fitness=0.00420753
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 13.0154 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.40978 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 9.10277 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 12.0714 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.3145 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.9469 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 11.501 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.1827 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.8635 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.65359 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.53748 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=79.5557, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=549.346, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=1500.26, total_ABS_CO2=0.00892322, fitness=5.94778e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 9.54661 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.70879 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=2952.15, total_ABS_CO2=12.2116, fitness=0.00413652
+[UNSTABLE] tau = 100, rho = 13.5558 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.4068 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.58654 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=55.2407, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=366.145, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=3000] total_CO2=967.654, total_ABS_CO2=0.00656625, fitness=6.78574e-06
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=51.7523, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=1857.87, total_ABS_CO2=7.84507, fitness=0.00422262
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=340.368, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=895.267, total_ABS_CO2=0.00630464, fitness=7.04218e-06
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=1713.23, total_ABS_CO2=7.26841, fitness=0.00424252
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 9.83121 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.10252 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.7631 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.26119 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.63851 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 19.5796 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 14.0156 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.2697 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.6023 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.7092 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.7789 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 4.40839 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.5842 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.30467 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.7471 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.16093 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.77337 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 11.3871 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.1927 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[UNSTABLE] tau = 100, rho = 3.37026 fitness = 0 (due to numerical instability)
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 19.5248 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.02657 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.1447 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 6.05743 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.98329 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.5899 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 17.5775 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.5016 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 9.76637 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.7424 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 12.0837 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[UNSTABLE] tau = 100, rho = 2.48194 fitness = 0 (due to numerical instability)
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[UNSTABLE] tau = 100, rho = 18.437 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[UNSTABLE] tau = 100, rho = 2.56356 fitness = 0 (due to numerical instability)
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 17.6409 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.48026 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.84643 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.13981 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 12.0584 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.04439 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.5872 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.89668 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.2926 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
@@ -660,71 +616,81 @@
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 13.3525 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.4986 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.3447 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.19064 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.4173 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.85111 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.9237 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.4258 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=78.9052, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=544.453, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=19.2243, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=44.2012, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1485.83, total_ABS_CO2=0.00884466, fitness=5.95268e-06
+[t=2000] total_CO2=117.612, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=285.658, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=2922.1, total_ABS_CO2=12.0911, fitness=0.00413782
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=298.358, total_ABS_CO2=0.00431154, fitness=1.44509e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=744.186, total_ABS_CO2=0.00578134, fitness=7.76868e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=555.655, total_ABS_CO2=2.82474, fitness=0.00508363
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=1414.8, total_ABS_CO2=6.0825, fitness=0.0042992
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 12.8409 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 20.3412 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.82987 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.23924 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.6229 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 20.8611 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 19.1362 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.8411 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.9461 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.68578 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 9.44026 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.4298 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.5045 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[UNSTABLE] tau = 100, rho = 17.8468 fitness = 0 (due to numerical instability)
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 3.31838 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
@@ -733,102 +699,111 @@
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=66.1951, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=81.5318, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=448.401, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=564.182, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=1203.66, total_ABS_CO2=0.00749528, fitness=6.22707e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=1544, total_ABS_CO2=0.00916805, fitness=5.93784e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=3043.2, total_ABS_CO2=12.5774, fitness=0.00413294
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2337.2, total_ABS_CO2=9.75611, fitness=0.00417427
-[UNSTABLE] tau = 100, rho = 7.23554 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.80251 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.03836 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.75325 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[UNSTABLE] tau = 100, rho = 10.6316 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.7612 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.97696 fitness = 0 (due to numerical instability)
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[UNSTABLE] tau = 100, rho = 9.14943 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=26.4198, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=163.969, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=419.031, total_ABS_CO2=0.00470706, fitness=1.12332e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=785.64, total_ABS_CO2=3.6547, fitness=0.00465187
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 19.2914 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.1997 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.28201 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 19.0482 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 9.74091 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.37999 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.06713 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=15.5318, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=94.4237, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=238.54, total_ABS_CO2=0.0041143, fitness=1.72478e-05
-[t=4000] total_CO2=442.209, total_ABS_CO2=2.43398, fitness=0.00550415
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=71.1195, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=485.662, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=1312.62, total_ABS_CO2=0.00797845, fitness=6.07826e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 13.4747 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.30667 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.51926 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=2562.04, total_ABS_CO2=10.6523, fitness=0.00415772
+[UNSTABLE] tau = 100, rho = 4.68091 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.02824 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.40329 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 6.37289 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.5539 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.70466 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
@@ -836,363 +811,390 @@
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 7.33819 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.2516 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.51499 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.5202 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.6552 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.14587 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=61.9053, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=40.5607, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=27.9327, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=416.022, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=259.897, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=173.92, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=1109.91, total_ABS_CO2=0.0071097, fitness=6.40567e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=674.19, total_ABS_CO2=0.00554624, fitness=8.22653e-06
+[t=3000] total_CO2=445.138, total_ABS_CO2=0.00479243, fitness=1.07662e-05
+[t=4000] total_CO2=2145.41, total_ABS_CO2=8.99172, fitness=0.00419115
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=1277.98, total_ABS_CO2=5.54289, fitness=0.00433722
+[t=4000] total_CO2=835.616, total_ABS_CO2=3.84058, fitness=0.00459611
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[UNSTABLE] tau = 100, rho = 3.31689 fitness = 0 (due to numerical instability)
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[UNSTABLE] tau = 100, rho = 10.8551 fitness = 0 (due to numerical instability)
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 18.2002 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.3303 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 15.5039 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.2304 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.1831 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 19.7333 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.5441 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.9906 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.6153 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.322 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=17.4097, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=106.168, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=75.6389, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=519.83, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=268.791, total_ABS_CO2=0.00421418, fitness=1.56783e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=499.538, total_ABS_CO2=2.62971, fitness=0.0052643
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=1413.19, total_ABS_CO2=0.00846495, fitness=5.98994e-06
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2770.89, total_ABS_CO2=11.4859, fitness=0.00414519
-[UNSTABLE] tau = 100, rho = 11.0244 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 6.3106 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 6.21823 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.4998 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.8508 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.9039 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.8478 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.9525 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.08038 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 8.99316 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 15.8266 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.2758 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 12.1154 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[UNSTABLE] tau = 100, rho = 16.1736 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.471 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.21847 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.6503 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.3796 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.0926 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=1000] total_CO2=67.9314, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=75.8488, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=521.415, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=2000] total_CO2=461.535, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=1417.87, total_ABS_CO2=0.00848861, fitness=5.9869e-06
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=1241.95, total_ABS_CO2=0.00766041, fitness=6.16803e-06
+[t=4000] total_CO2=2780.61, total_ABS_CO2=11.5247, fitness=0.00414468
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2416.01, total_ABS_CO2=10.0702, fitness=0.00416808
-[UNSTABLE] tau = 100, rho = 2.50105 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.43682 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 15.7591 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 20.6309 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.7637 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.2209 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.8169 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[UNSTABLE] tau = 100, rho = 5.99814 fitness = 0 (due to numerical instability)
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=1000] total_CO2=87.3992, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=2000] total_CO2=607.846, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=1672.14, total_ABS_CO2=0.00994785, fitness=5.94919e-06
-[t=4000] total_CO2=3309.11, total_ABS_CO2=13.6507, fitness=0.0041252
-[UNSTABLE] tau = 100, rho = 13.2786 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.1649 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.15875 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.1063 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 10.5739 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.6302 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=88.8521, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=618.462, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=68.384, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1702.99, total_ABS_CO2=0.0101498, fitness=5.95998e-06
-[t=2000] total_CO2=464.959, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=3372.75, total_ABS_CO2=13.9081, fitness=0.00412368
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=1251.96, total_ABS_CO2=0.00770436, fitness=6.15385e-06
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2436.64, total_ABS_CO2=10.1524, fitness=0.00416654
-[UNSTABLE] tau = 100, rho = 6.39102 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.44407 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 13.8838 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.04442 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.32486 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 6.31155 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.6448 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.58625 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.5588 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.3027 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.90082 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.0507 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=69.3704, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=14.5864, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=472.425, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=88.5492, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=1273.8, total_ABS_CO2=0.00780151, fitness=6.12459e-06
+[t=3000] total_CO2=223.44, total_ABS_CO2=0.00406434, fitness=1.81898e-05
+[t=4000] total_CO2=2481.74, total_ABS_CO2=10.3321, fitness=0.00416324
+[t=4000] total_CO2=413.627, total_ABS_CO2=2.3378, fitness=0.00565195
+[UNSTABLE] tau = 100, rho = 16.7398 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 12.6216 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.505 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.37412 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.34854 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 17.8186 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 9.48935 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.3162 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.25942 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[UNSTABLE] tau = 100, rho = 4.89342 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.39363 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.0408 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=58.1732, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=388.007, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1029.66, total_ABS_CO2=0.00679777, fitness=6.60196e-06
+[t=1000] total_CO2=78.8347, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=543.923, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=1982.67, total_ABS_CO2=8.34279, fitness=0.00420787
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 13.6133 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 14.546 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.28861 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=3000] total_CO2=1484.26, total_ABS_CO2=0.0088362, fitness=5.95325e-06
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=2918.84, total_ABS_CO2=12.0781, fitness=0.00413797
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 4.1168 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.12779 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.8806 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.6195 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.10286 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.50867 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=24.6612, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=74.9269, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=152.492, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=514.453, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=389.011, total_ABS_CO2=0.00460885, fitness=1.18476e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=1397.34, total_ABS_CO2=0.00838538, fitness=6.00096e-06
-[t=4000] total_CO2=728.277, total_ABS_CO2=3.44355, fitness=0.00472835
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2737.92, total_ABS_CO2=11.3541, fitness=0.00414699
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 6.56002 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 17.5409 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.3187 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.36264 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 19.112 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.24497 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.90566 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.2864 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.2421 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.46409 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.77474 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.99437 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.4155 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=84.7184, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=587.992, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=77.5956, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=3000] total_CO2=1614.03, total_ABS_CO2=0.00958224, fitness=5.93685e-06
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=534.591, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=3188.74, total_ABS_CO2=13.1639, fitness=0.00412826
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=1456.73, total_ABS_CO2=0.00868948, fitness=5.96505e-06
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=2861.51, total_ABS_CO2=11.8484, fitness=0.00414061
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 4.87199 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 23.8644 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.99511 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.48364 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.5826 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 20.8405 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.5552 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 8.42819 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 19.9525 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.7223 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=76.0963, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=523.283, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1423.38, total_ABS_CO2=0.00851665, fitness=5.98342e-06
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=2792.08, total_ABS_CO2=11.5706, fitness=0.00414407
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 7.05495 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.3948 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.68665 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
@@ -1202,78 +1204,88 @@
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 17.0179 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.1868 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.7757 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 14.3256 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.9048 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.52013 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 12.5894 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.4638 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=1000] total_CO2=42.8531, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=276.069, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 16.9955 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 13.7851 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 12.9375 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.33941 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.62574 fitness = 0 (due to numerical instability)
+[t=3000] total_CO2=718.05, total_ABS_CO2=0.00569314, fitness=7.92861e-06
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=1363.61, total_ABS_CO2=5.88019, fitness=0.00431221
+[UNSTABLE] tau = 100, rho = 13.7277 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.61623 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.57121 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.14467 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.21775 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
@@ -1282,37 +1294,24 @@
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 14.4205 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.02765 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[UNSTABLE] tau = 100, rho = 12.9073 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.19826 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 12.9178 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 12.4089 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.85824 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.3329 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
@@ -1321,313 +1320,318 @@
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 10.9931 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.5175 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.19061 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.746 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.10939 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.3807 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 4.99462 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.7535 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 3.53216 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.5728 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.269 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.53046 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 9.78793 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.3623 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.27891 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.5829 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=68.107, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=462.863, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=1245.83, total_ABS_CO2=0.00767741, fitness=6.16247e-06
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=2424.01, total_ABS_CO2=10.102, fitness=0.00416749
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 13.5503 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.1304 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.1706 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.09999 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[UNSTABLE] tau = 100, rho = 14.224 fitness = 0 (due to numerical instability)
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[UNSTABLE] tau = 100, rho = 17.8643 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.12845 fitness = 0 (due to numerical instability)
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 13.6428 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 14.7665 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 16.7604 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.0113 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.2394 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.1751 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.8988 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 5.81643 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.0164 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=89.0728, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=620.053, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=1707.58, total_ABS_CO2=0.0101802, fitness=5.96175e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=3382.19, total_ABS_CO2=13.9462, fitness=0.00412342
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 16.4548 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.68704 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.73104 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 15.3571 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.94298 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 8.49452 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.23575 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.15828 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.21279 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.9403 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=79.2922, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=547.365, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=1494.42, total_ABS_CO2=0.00889128, fitness=5.94966e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=55.4425, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=2939.98, total_ABS_CO2=12.1628, fitness=0.00413705
+[t=2000] total_CO2=367.644, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=971.888, total_ABS_CO2=0.00658183, fitness=6.7722e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 14.4376 fitness = 0 (due to numerical instability)
+[t=4000] total_CO2=1866.37, total_ABS_CO2=7.87895, fitness=0.00422155
+[UNSTABLE] tau = 100, rho = 5.35819 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.482 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 19.4612 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.1589 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 2.38781 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[UNSTABLE] tau = 100, rho = 11.2057 fitness = 0 (due to numerical instability)
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[UNSTABLE] tau = 100, rho = 18.6669 fitness = 0 (due to numerical instability)
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=1000] total_CO2=83.637, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=2000] total_CO2=579.93, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=1590.35, total_ABS_CO2=0.00943903, fitness=5.93519e-06
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=3139.57, total_ABS_CO2=12.9655, fitness=0.00412971
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 3.01232 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 8.8336 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.72725 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.77816 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 7.13663 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 13.4548 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.8325 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.4491 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 20.4575 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 20.8168 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.2093 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 16.5773 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 8.92314 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=47.273, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=1000] total_CO2=63.8332, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=307.717, total_ABS_CO2=0, fitness=0
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=2000] total_CO2=430.557, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=804.691, total_ABS_CO2=0.00598786, fitness=7.44119e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=3000] total_CO2=1151.87, total_ABS_CO2=0.00727919, fitness=6.31946e-06
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=4000] total_CO2=1533.78, total_ABS_CO2=6.55428, fitness=0.00427329
-[t=4000] total_CO2=2231.04, total_ABS_CO2=9.33304, fitness=0.00418327
-[UNSTABLE] tau = 100, rho = 3.51832 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 14.439 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.4497 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 12.3329 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 18.5877 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.7399 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.6111 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 14.3787 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.6415 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 4.93152 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=81.311, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=63.0693, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=562.527, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=424.794, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=1539.12, total_ABS_CO2=0.00914023, fitness=5.9386e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=1135.21, total_ABS_CO2=0.00721133, fitness=6.35243e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=3033.05, total_ABS_CO2=12.5366, fitness=0.00413332
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=2196.99, total_ABS_CO2=9.19734, fitness=0.00418633
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 9.56571 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.67848 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 5.81289 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 15.8875 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 9.28229 fitness = 0 (due to numerical instability)
-[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[UNSTABLE] tau = 100, rho = 18.6556 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 7.93962 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 18.5599 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 15.057 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 13.0793 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 6.15058 fitness = 0 (due to numerical instability)
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
-[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=47.9535, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
-[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=312.641, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
-[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=3000] total_CO2=818.274, total_ABS_CO2=0.00603473, fitness=7.37495e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=1560.58, total_ABS_CO2=6.6608, fitness=0.00426815
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[UNSTABLE] tau = 100, rho = 6.19404 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 10.9267 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 3.53942 fitness = 0 (due to numerical instability)
+[UNSTABLE] tau = 100, rho = 17.4327 fitness = 0 (due to numerical instability)
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
-[UNSTABLE] tau = 100, rho = 3.91502 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 13.1373 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 14.5461 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 4.48852 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2.39841 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 19.0175 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 10.4794 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 11.2798 fitness = 0 (due to numerical instability)
+[t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=0] total_CO2=0, total_ABS_CO2=0, fitness=nan
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=82.9121, total_ABS_CO2=0, fitness=0
+[t=1000] total_CO2=83.7407, total_ABS_CO2=0, fitness=0
 [t=1000] total_CO2=13.4808, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
+[t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=2000] total_CO2=574.516, total_ABS_CO2=0, fitness=0
+[t=2000] total_CO2=580.704, total_ABS_CO2=0, fitness=0
 [t=2000] total_CO2=81.711, total_ABS_CO2=0, fitness=0
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
+[t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=3000] total_CO2=1574.42, total_ABS_CO2=0.00934455, fitness=5.93522e-06
+[t=3000] total_CO2=1592.62, total_ABS_CO2=0.00945265, fitness=5.93526e-06
 [t=3000] total_CO2=205.89, total_ABS_CO2=0.00400616, fitness=1.94577e-05
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
+[t=4000] total_CO2=3106.48, total_ABS_CO2=12.8321, fitness=0.00413076
+[t=4000] total_CO2=3144.3, total_ABS_CO2=12.9846, fitness=0.00412956
 [t=4000] total_CO2=380.433, total_ABS_CO2=2.22731, fitness=0.00585469
 
  Final best after 50 generations:
-Fitness = 0.0133115  |  tau = 100  |  rho = 1.9406
+Fitness = 0.0134451  |  tau = 35  |  rho = 6.0687
