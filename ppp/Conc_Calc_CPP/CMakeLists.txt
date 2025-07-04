@@ -26,6 +26,12 @@ message(STATUS "CMAKE_PREFIX_PATH includes: ${CMAKE_PREFIX_PATH}")
 # Find OpenMP
 find_package(OpenMP REQUIRED)
 
+# find mpi
+find_package(MPI REQUIRED)
+include_directories(${MPI_INCLUDE_PATH})
+message(STATUS "MPI include: ${MPI_INCLUDE_PATH}")
+message(STATUS "MPI libs: ${MPI_LIBRARIES}")
+
 # Add source files
 set(SOURCE_FILES1
     Conc_Calc_CPP.cpp
@@ -85,7 +91,7 @@ set(SOURCE_FILES4
 # create module 4
 nanobind_add_module(Genetic_algo ${SOURCE_FILES4})
 
-
+#link open mp
 if (OpenMP_CXX_FOUND)
     message(STATUS "OpenMP found: YES")
     message(STATUS "OpenMP compile flags: ${OpenMP_CXX_FLAGS}")
@@ -96,6 +102,9 @@ if (OpenMP_CXX_FOUND)
 else()
     message(WARNING "OpenMP not found: building without parallelization!")
 endif()
+
+#link MPI
+target_link_libraries(Genetic_algo PRIVATE MPI::MPI_CXX)
 
 message(STATUS "CMAKE_CURRENT_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
 

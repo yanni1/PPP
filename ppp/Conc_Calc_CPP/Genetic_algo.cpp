@@ -14,7 +14,7 @@ namespace nb = nanobind;
 #include <numeric>
 #include <cmath>
 #include <fstream>
-
+#include <mpi.h>
 #include <sys/resource.h>
 
 #include "Calc_CPP.h"
@@ -28,11 +28,11 @@ static struct {
     int tau_min = 1;
     int tau_max = 100;
 
-    float rho_min = -20.0f;
-    float rho_max = 20.0f;
+    float rho_min = -2.0f; //20
+    float rho_max = 2.0f;  //20
 
     float rho_lower_clamp = 0.1f;
-    float rho_upper_clamp = 1000.0f;
+    float rho_upper_clamp = 2.0f;
 
     int tau_clamp_min = 1;
     int tau_clamp_max = 100;
@@ -127,8 +127,58 @@ Individual crossover(const Individual& a, const Individual& b) {
     return child;
 }   
 
+//top 4 mpi exchanger function
+void exchange_top_individuals(vector<Individual>& population, int rank) {
+    //extract top 4 locally
+    vector<Individual> top4_local(population.begin(), population.begin() + 4);
+
+    //buffer for sending: tau, rho, fitness per individual
+    float send_buf[12]; //array init
+    for (int i = 0; i < 4; i++) {
+        send_buf[i * 3 + 0] = static_cast<float>(top4_local[i].tau); //tau is an int
+        send_buf[i * 3 + 1] = top4_local[i].rho;
+        send_buf[i * 3 + 2] = top4_local[i].fitness;
+    }
+    float recv_buf[12];
+
+    int peer = rank ^ 1; //bitwise XOR operator to switch between ranks to talk to other rank => switches 1 and 0
+
+    //exchange
+    MPI_Sendrecv(send_buf, 12, MPI_FLOAT, peer, 0, recv_buf, 12, MPI_FLOAT, peer, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+    //merge and select best 4
+    array<Individual, 8> merged; //stack allocation
+    for (int i = 0; i < 4; i++) {
+        merged[i] = top4_local[i];
+    }
+    for (int i = 0; i < 4; i++) {
+        merged[i + 4] = {static_cast<int>(recv_buf[i * 3 + 0]), recv_buf[i * 3 + 1], recv_buf[i * 3 + 2]}; //assigning i 4=>7 wiht the 4 recieved individuals (assing the tau,rho, fitness to the individuals inside the call)
+    };
+
+    //sort and update pop
+    sort(merged.begin(), merged.end(), [](const Individual& a, const Individual& b) {
+        return a.fitness > b.fitness;
+    });
+
+    for (int i = 0; i < 4; i++) {
+        population[i] = merged[i];
+    }
+}
+
+
 tuple<int , float> run_ga(int nt_given) {//main
     limit_memory(15L * 1024 * 1024 * 1024); // 15 GB cap
+    //init mpi
+    MPI_Init(nullptr, nullptr);
+    int rank, size;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    if (size != 2) {
+        if (rank == 0) std::cerr << "This program requires 2 processes.\n";
+        MPI_Finalize();
+        return {-1, -1.0f};
+    }
+
     nt_global = nt_given;
     ofstream log_file("ga_log.txt");
     const int population_size = 10;
@@ -151,24 +201,26 @@ tuple<int , float> run_ga(int nt_given) {//main
     }
     
     Individual best_all_time = population[0];
-
+    vector<Individual> top4(4);
     for (int gen = 0; gen < generations; gen++) {
-        //Step 2: Select top 3
-        sort(population.begin(), population.end(),[](const Individual& a, const Individual& b) {
-                      return a.fitness > b.fitness;
-                  });
-
-        vector<Individual> top3(population.begin(), population.begin() + 3);
-        if (top3[0].fitness > best_all_time.fitness) {
-            best_all_time = top3[0];
-        }
+        //Step 2: get best 4
+        sort(population.begin(), population.end(),[](const Individual& a, const Individual& b) {return a.fitness > b.fitness;}); //sorting before if blocks
+        if ((gen % 4 == 0) && gen != 0) {
+            exchange_top_individuals(population, rank); //outputs population 0->3 as the merged best
+        };
+        for (int ii = 0; ii < 4; ii++) {
+            top4[ii] = population[ii];
+        };
+        if (top4[0].fitness > best_all_time.fitness) {
+            best_all_time = top4[0];
+        };
 
         //Step 3: new gen
         vector<Individual> next_gen(population_size);
-        #pragma omp parallel for shared(next_gen, log_file) firstprivate(gen, top3) // 
+        #pragma omp parallel for shared(next_gen, log_file) firstprivate(gen, top4) // 
         for (int i = 0; i < population_size; i++) {
-            const Individual& parent = top3[i % 3]; //i % 3 gives 0, 1, 2, 0, 1, 2...
-            const Individual& parent2 = top3[(i + 1) % 3];
+            const Individual& parent = top4[i % 3]; //i % 3 gives 0, 1, 2, 0, 1, 2...
+            const Individual& parent2 = top4[(i + 1) % 3];
             Individual child_cross = crossover(parent, parent2);
             Individual child = mutate(child_cross);
             child.fitness = evaluate(child.tau, child.rho, log_file);
@@ -185,10 +237,9 @@ tuple<int , float> run_ga(int nt_given) {//main
     log_file << "Fitness = " << best_all_time.fitness << "  |  tau = " << best_all_time.tau << "  |  rho = " << best_all_time.rho << "\n";
     log_file.close();
 
-
+    MPI_Finalize();
     return {best_all_time.tau, best_all_time.rho};
 }
-
 
 #ifndef PROFILING
 //make nb module

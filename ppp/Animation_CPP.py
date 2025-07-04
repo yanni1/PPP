@@ -59,3 +59,6 @@ fig.colorbar(ax4.images[0], ax=ax4, orientation='vertical', label='Concentration
 
 ani = ArtistAnimation(fig, ims, 100)
 plt.show()
+
+
+# mpirun -np 2 /Users/yanni/.pyenv/versions/3.12.2/bin/python /Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp/Animation_CPP.py
