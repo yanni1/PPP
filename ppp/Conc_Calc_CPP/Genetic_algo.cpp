@@ -236,9 +236,32 @@ tuple<int , float> run_ga(int nt_given) {//main
     log_file << "\n Final best after " << generations << " generations:\n";
     log_file << "Fitness = " << best_all_time.fitness << "  |  tau = " << best_all_time.tau << "  |  rho = " << best_all_time.rho << "\n";
     log_file.close();
+    
+    //make sure output is best of two processes
+    float final_send[3] = {static_cast<float>(best_all_time.tau), best_all_time.rho, best_all_time.fitness};
+    float final_recv[3];
+
+    int peer = rank ^ 1;
+
+    MPI_Sendrecv(final_send, 3, MPI_FLOAT, peer, 1, final_recv, 3, MPI_FLOAT, peer, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+    //compare and select global best
+    float local_fitness = best_all_time.fitness;
+    float remote_fitness = final_recv[2];
+
+    if (remote_fitness > local_fitness) {
+        best_all_time.tau = static_cast<int>(final_recv[0]);
+        best_all_time.rho = final_recv[1];
+        best_all_time.fitness = remote_fitness;
+    }
 
     MPI_Finalize();
-    return {best_all_time.tau, best_all_time.rho};
+
+    if (rank == 0) {
+        return {best_all_time.tau, best_all_time.rho};
+    } else {    
+        return {0, 0};
+    }
 }
 
 #ifndef PROFILING
