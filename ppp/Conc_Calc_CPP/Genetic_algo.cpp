@@ -63,7 +63,7 @@ float evaluate(int tau, float rho, ofstream& log_file) {
     bool is_unstable = !std::all_of(Ct.begin(), Ct.end(), [](float x) { return std::isfinite(x); }) || !std::all_of(eps_field.begin(), eps_field.end(), [](float x) { return std::isfinite(x); }) || (*std::max_element(Ct.begin(), Ct.end()) > 1e6f);
     float total_CO2 = 0.0f;
     float total_ABS_CO2 = 0.0f;
-    //abort when unstable
+    //abort when unstable and return fitness 0
     if (is_unstable) {
         #pragma omp critical
         {
@@ -84,7 +84,7 @@ float evaluate(int tau, float rho, ofstream& log_file) {
 
             total_CO2 += std::accumulate(begin_ct, end_ct, 0.0f) * p.dt;
             total_ABS_CO2 += std::inner_product(begin_ct, end_ct, begin_eps, 0.0f) * p.dt; //calculate actual abs. doesn't need an end point for eps => bound to ct
-            #ifndef PROFILING
+            #ifdef PROFILING
             if (t % 1000 == 0){
                 #pragma omp critical
                 {
@@ -94,9 +94,9 @@ float evaluate(int tau, float rho, ofstream& log_file) {
             #endif
         }
     }
-
-    
-    if (total_CO2 < 1e-6f) return 0.0f;  // avoid division by near-zero
+    // avoid division by near-zero
+    if (total_CO2 < 1e-6f) return 0.0f;
+    //discourage very small rho's
     if (rho <= 0.05f) {
         #pragma omp critical
         {
@@ -104,6 +104,7 @@ float evaluate(int tau, float rho, ofstream& log_file) {
         }
     return 0.0f;
     }
+
     return total_ABS_CO2 / total_CO2;
 }
 
@@ -158,27 +159,28 @@ void exchange_top_individuals(vector<Individual>& population, int rank) {
     };
 
     //sort and update pop
-    sort(merged.begin(), merged.end(), [](const Individual& a, const Individual& b) {
-        return a.fitness > b.fitness;
-    });
-
+    sort(merged.begin(), merged.end(), [](const Individual& a, const Individual& b) {return a.fitness > b.fitness;});
     for (int i = 0; i < 4; i++) {
         population[i] = merged[i];
     }
 }
 
-
 tuple<int , float> run_ga(int nt_given) {//main
     limit_memory(15L * 1024 * 1024 * 1024); // 15 GB cap
     //init mpi
-    MPI_Init(nullptr, nullptr);
+    int initialized = 0;
+    MPI_Initialized(&initialized); //checks if MPI has been init, set inititialzed to 1 if so
+    if (!initialized) {
+        MPI_Init(nullptr, nullptr); //prevent from double init due to nanobind python call
+    }   
     int rank, size;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
+    //prevent accidental runs with wrong rank (2 processes should be used)
     if (size != 2) {
-        if (rank == 0) std::cerr << "This program requires 2 processes.\n";
+        if (rank == 0) cerr << "use mpirun -np 2 \n"; //error message
         MPI_Finalize();
-        return {-1, -1.0f};
+        return {-1, -1.0f}; //neg values break the simulation visual
     }
 
     nt_global = nt_given;
@@ -233,15 +235,33 @@ tuple<int , float> run_ga(int nt_given) {//main
         }
         population = std::move(next_gen);    
     };//end generations loop
-        //final step synchronization
-        sort(population.begin(), population.end(),[](const Individual& a, const Individual& b) {return a.fitness > b.fitness;}); //sorting before if blocks
-        exchange_top_individuals(population, rank); //outputs population 0->3 as the merged best
-        for (int ii = 0; ii < 4; ii++) {
-            top4[ii] = population[ii];
-        };
-        if (top4[0].fitness > best_all_time.fitness) {
-        best_all_time = top4[0];
-        };
+
+    //selecting LOCAL best after final step (since loop ends with generation of last new gen)
+    sort(population.begin(), population.end(),[](const Individual& a, const Individual& b) {return a.fitness > b.fitness;}); //sorting before if blocks
+    exchange_top_individuals(population, rank); //outputs population 0->3 as the merged best
+    for (int ii = 0; ii < 4; ii++) {
+        top4[ii] = population[ii];
+    };
+    if (top4[0].fitness > best_all_time.fitness) {
+    best_all_time = top4[0];
+    };
+    
+    //synchronizing final best
+    //prepare local best_all_time buffer arrays for exchange
+    float local_best_data[3] = {static_cast<float>(best_all_time.tau),best_all_time.rho,best_all_time.fitness};
+    float peer_best_data[3];
+
+    //exchange
+    int peer = rank ^ 1;
+    MPI_Sendrecv(local_best_data, 3, MPI_FLOAT, peer, 0,peer_best_data, 3, MPI_FLOAT, peer, 0,MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+    //peer best
+    Individual peer_best = {static_cast<int>(peer_best_data[0]),peer_best_data[1],peer_best_data[2]};
+    
+    //final best
+    if (peer_best.fitness > best_all_time.fitness) {
+        best_all_time = peer_best;
+    }
 
     log_file << "\n Final best after " << generations << " generations:\n";
     log_file << "Fitness = " << best_all_time.fitness << "  |  tau = " << best_all_time.tau << "  |  rho = " << best_all_time.rho << "\n";
@@ -249,6 +269,7 @@ tuple<int , float> run_ga(int nt_given) {//main
 
     MPI_Finalize();
 
+    //only return one real value to python wrapper
     if (rank == 0) {
         return {best_all_time.tau, best_all_time.rho};
     } else {    

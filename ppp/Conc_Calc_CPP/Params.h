@@ -63,6 +63,7 @@ public:
     int y0_ccf();
     int semiMajf();
     int semiMinf();
+    //inline idx calculator
     inline int idx(int s, int j, int i) const {
         return s * nxny + j * nx + i;
     }

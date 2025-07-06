@@ -37,22 +37,21 @@ tuple<vector<float>, vector<float>>calc(params& p) {
     for (int n = 0; n < p.nt; n++) {
         if (n % 1000 == 0){cout << "timestep:" << n << '\n' << endl;};
         fill(eps_field.begin(), eps_field.end(), 0.0f); //reset eps_field
-        //GA logic
+        //GA logic to start O2 vent and activate pump
         int update_O2 = 0;
         if ( n == 0){
-            update_O2 = 1;
-            //cout << "update_O2: " << update_O2 << "at n= "<< n << "\n" << endl;
-
+            update_O2 = 1; //init O2 vent with reservoir
         } else if (n % p.tau == 0) {
-            update_O2 = 2;
-            //cout << "update_O2: " << update_O2 << "at n= "<< n <<"\n" << endl;
+            update_O2 = 2; //activate pump every tau time steps
         };
+
         CC_CPP(p, C, Cn, eps_field, update_O2);  // evolve concentration directly in preallocated vectors, only passed as pointers => using 2 buffers essentially
+        
         //Store current timestep C into flat Ct and same for eps_field
         int t_offset = n * eps_size;
         #pragma omp parallel for simd
         for (int idx = 0; idx < eps_size; idx++) {
-            eps_series[t_offset + idx] = eps_field[idx];
+            eps_series[t_offset + idx] = eps_field[idx]; //eps buffer not swapped just reused (reset to 0)
         };
         #pragma omp parallel for simd
         for (int idx = 0; idx < p.ns * p.ny * p.nx; idx++) { //fully flattened data copying
@@ -66,6 +65,6 @@ tuple<vector<float>, vector<float>>calc(params& p) {
 #ifndef PROFILING
 //make nb module
 NB_MODULE(Calc_CPP, m) {
-    m.def("Calc_CPP", &calc, nb::rv_policy::move, "calculates the conc gradient and eps_map");
+    m.def("Calc_CPP", &calc, nb::rv_policy::move, "calculates the conc gradient and eps_map"); //using move to move the cpp vectors to python via nb instead of default copying
 };
 #endif

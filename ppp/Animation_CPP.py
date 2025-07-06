@@ -16,7 +16,7 @@ rank = comm.Get_rank()
 nt = 5000
 
 tau, rho = get_best_params(nt)
-if rank == 0:
+if rank == 0: #only visualize once
     print("GA found best tau, rho to be: ",tau,rho)
     p = params_module.params(nt, int(tau), rho)
 
@@ -68,3 +68,4 @@ if rank == 0:
 
 
 # mpirun -np 2 /Users/yanni/.pyenv/versions/3.12.2/bin/python /Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp/Animation_CPP.py
+# ik had ook (denk ik) gewoon de rank kunnen hard coden in Genetic_algo.cpp zelf en Animation_CPP.py gewoon normaal kunnen callen en zo de dubbele visualisatie omzeilen?
