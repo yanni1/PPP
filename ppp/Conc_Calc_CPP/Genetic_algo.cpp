@@ -84,12 +84,14 @@ float evaluate(int tau, float rho, ofstream& log_file) {
 
             total_CO2 += std::accumulate(begin_ct, end_ct, 0.0f) * p.dt;
             total_ABS_CO2 += std::inner_product(begin_ct, end_ct, begin_eps, 0.0f) * p.dt; //calculate actual abs. doesn't need an end point for eps => bound to ct
+            #ifndef PROFILING
             if (t % 1000 == 0){
                 #pragma omp critical
                 {
                 log_file << "[t=" << t << "] total_CO2=" << total_CO2 << ", total_ABS_CO2=" << total_ABS_CO2 << ", fitness=" << (total_ABS_CO2 / total_CO2) << "\n";
                 }
             }
+            #endif
         }
     }
 
@@ -229,31 +231,21 @@ tuple<int , float> run_ga(int nt_given) {//main
             next_gen[i] = child;
             }
         }
-
-        population = std::move(next_gen);
-    }
+        population = std::move(next_gen);    
+    };//end generations loop
+        //final step synchronization
+        sort(population.begin(), population.end(),[](const Individual& a, const Individual& b) {return a.fitness > b.fitness;}); //sorting before if blocks
+        exchange_top_individuals(population, rank); //outputs population 0->3 as the merged best
+        for (int ii = 0; ii < 4; ii++) {
+            top4[ii] = population[ii];
+        };
+        if (top4[0].fitness > best_all_time.fitness) {
+        best_all_time = top4[0];
+        };
 
     log_file << "\n Final best after " << generations << " generations:\n";
     log_file << "Fitness = " << best_all_time.fitness << "  |  tau = " << best_all_time.tau << "  |  rho = " << best_all_time.rho << "\n";
     log_file.close();
-    
-    //make sure output is best of two processes
-    float final_send[3] = {static_cast<float>(best_all_time.tau), best_all_time.rho, best_all_time.fitness};
-    float final_recv[3];
-
-    int peer = rank ^ 1;
-
-    MPI_Sendrecv(final_send, 3, MPI_FLOAT, peer, 1, final_recv, 3, MPI_FLOAT, peer, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-    //compare and select global best
-    float local_fitness = best_all_time.fitness;
-    float remote_fitness = final_recv[2];
-
-    if (remote_fitness > local_fitness) {
-        best_all_time.tau = static_cast<int>(final_recv[0]);
-        best_all_time.rho = final_recv[1];
-        best_all_time.fitness = remote_fitness;
-    }
 
     MPI_Finalize();
 
