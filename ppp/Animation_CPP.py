@@ -68,4 +68,4 @@ if rank == 0: #only visualize once
 
 
 # mpirun -np 2 /Users/yanni/.pyenv/versions/3.12.2/bin/python /Users/yanni/VSC_Projects_Folder/testenv/PPP/ppp/Animation_CPP.py
-# ik had ook (denk ik) gewoon de rank kunnen hard coden in Genetic_algo.cpp zelf en Animation_CPP.py gewoon normaal kunnen callen en zo de dubbele visualisatie omzeilen?
+# I couldve hard coded the rank in Genetic_algo.cpp and just call Animation_CPP.py normally instead I think? but this would probably be more realistic
