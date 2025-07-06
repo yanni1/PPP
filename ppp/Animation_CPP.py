@@ -32,7 +32,7 @@ if rank == 0: #only visualize once
     ax1.set_title("CO")
     ax2.set_title("CO₂")
     ax3.set_title("O₂")
-    ax4.set_title("ε_CO (absorption)")
+    ax4.set_title("CO₂ Absorption")
     ims = []
 
     # ellips
