@@ -14,11 +14,13 @@ rank = comm.Get_rank()
 
 
 nt = 5000
+p = params_module.params(nt)
 
-tau, rho = get_best_params(nt)
+tau, rho = get_best_params(p)
 if rank == 0: #only visualize once
     print("GA found best tau, rho to be: ",tau,rho)
-    p = params_module.params(nt, int(tau), rho)
+    p.setTau(tau)
+    p.setRho(rho)
 
     C_flat, eps_field = Calc_CPP.Calc_CPP(p)
 

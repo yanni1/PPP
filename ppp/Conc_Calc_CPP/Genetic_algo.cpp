@@ -54,9 +54,10 @@ struct Individual {
 };
 
 //fitness evaluation function
-float evaluate(int tau, float rho, ofstream& log_file) {
-    omp_set_num_threads(2);
-    params p = params(nt_global, tau, rho);
+float evaluate(params& p, int tau, float rho, ofstream& log_file) { //params only intialized once
+    //omp_set_num_threads(2);
+    p.setTau(tau);
+    p.setRho(rho);
     auto [Ct, eps_field] = calc(p); //return ct and eps_field in tuple
     //stability checks
     // NaNs or Infs in Ct or eps_field or overflow values
@@ -165,7 +166,7 @@ void exchange_top_individuals(vector<Individual>& population, int rank) {
     }
 }
 
-tuple<int , float> run_ga(int nt_given) {//main
+tuple<int , float> run_ga(params& p) {//main
     limit_memory(15L * 1024 * 1024 * 1024); // 15 GB cap
     //init mpi
     int initialized = 0;
@@ -183,7 +184,7 @@ tuple<int , float> run_ga(int nt_given) {//main
         return {-1, -1.0f}; //neg values break the simulation visual
     }
 
-    nt_global = nt_given;
+    nt_global = p.nt;
     ofstream log_file("ga_log.txt");
     const int population_size = 10;
     const int generations = 50;
@@ -196,8 +197,9 @@ tuple<int , float> run_ga(int nt_given) {//main
         thread_local mt19937 local_rng(random_device{}());
         thread_local uniform_int_distribution<int> tau_dist(cfg.tau_min, cfg.tau_max);
         thread_local uniform_real_distribution<float> rho_dist(0.1, cfg.rho_max); //no inital neg rho allowed
+        thread_local params p_local = p; // thread-local copy of params
         Individual ind{tau_dist(local_rng), rho_dist(local_rng), 0.0f};
-        ind.fitness = evaluate(ind.tau, ind.rho, log_file);
+        ind.fitness = evaluate(p_local, ind.tau, ind.rho, log_file);
         #pragma omp critical
         {
         population[i] = ind; 
@@ -223,11 +225,12 @@ tuple<int , float> run_ga(int nt_given) {//main
         vector<Individual> next_gen(population_size);
         #pragma omp parallel for shared(next_gen, log_file) firstprivate(gen, top4) // 
         for (int i = 0; i < population_size; i++) {
+            thread_local params p_local = p; // thread-local copy of params
             const Individual& parent = top4[i % 3]; //i % 3 gives 0, 1, 2, 0, 1, 2...
             const Individual& parent2 = top4[(i + 1) % 3];
             Individual child_cross = crossover(parent, parent2);
             Individual child = mutate(child_cross);
-            child.fitness = evaluate(child.tau, child.rho, log_file);
+            child.fitness = evaluate(p_local, child.tau, child.rho, log_file);
             #pragma omp critical    
             {
             next_gen[i] = child;

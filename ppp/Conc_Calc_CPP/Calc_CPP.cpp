@@ -21,14 +21,15 @@ tuple<vector<float>, vector<float>>calc(params& p) {
     vector<float> Ct(p.nt * p.ns * p.ny * p.nx, 0.0f); //flattened vector values set to 0f (index = (s * ny + y) * nx + x)
     vector<float> C(p.ns * p.ny * p.nx, 0.0f); //flattened input buffer
     vector<float> Cn(p.ns * p.ny * p.nx, 0.0f); //flattened output buffer
+    
+    //C[0] = C_CO
+    //C[1] = C_CO2
+    //C[2] = C_O2
 
     //absorption field visualization
     vector<float> eps_field(p.ny * p.nx, 0.0f);
     vector<float> eps_series(p.nt * p.ny * p.nx, 0.0f);
     int eps_size = p.ny * p.nx; //index eps_field
-    //C[0] = C_CO
-    //C[1] = C_CO2
-    //C[2] = C_O2
 
     // CO concetration at y = 0 => C0_reservoir
     //flattened initial condition

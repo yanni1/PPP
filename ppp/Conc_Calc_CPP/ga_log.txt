@@ -126,7 +126,6 @@
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 1.99586 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
@@ -144,16 +143,6 @@
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
-[UNSTABLE] tau = 100, rho = 1.99462 fitness = 0 (due to numerical instability)
-
- Final best after 50 generations:
-Fitness = 0.0242117  |  tau = 100  |  rho = 1.36474
- = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
@@ -174,4 +163,4 @@ Fitness = 0.0242117  |  tau = 100  |  rho = 1.36474
 [UNSTABLE] tau = 100, rho = 2 fitness = 0 (due to numerical instability)
 
  Final best after 50 generations:
-Fitness = 0.0242117  |  tau = 100  |  rho = 1.36474
+Fitness = 0.0242398  |  tau = 42  |  rho = 0.607568

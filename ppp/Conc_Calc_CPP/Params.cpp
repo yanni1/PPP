@@ -3,7 +3,7 @@
 #include "Params.h"
 using namespace std;
 
-params::params(int nt, int tau, float rho) {
+params::params(int nt) {
     params::dx = 0.01;
     params::dy = 0.01;
     params::dt = 0.0005;
@@ -35,11 +35,16 @@ params::params(int nt, int tau, float rho) {
     params::y0_cc = params::y0_ccf();
     params::semiMaj = params::semiMajf();
     params::semiMin = params::semiMinf();
-    params::tau = tau;
-    params::rho = rho;
-
-
 };
+
+//setters
+void params::setTau(int new_tau) {
+    tau = new_tau;
+}
+void params::setRho(float new_rho) {
+    rho = new_rho;
+}
+
 //actual mem functions
 int params::nxf() { return(int(Lx/dx)); };
 int params::nyf() { return(int(Ly/dy)); };

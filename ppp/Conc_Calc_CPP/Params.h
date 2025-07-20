@@ -47,7 +47,11 @@ public:
     float rho;
 
     // Constructor (defined in cpp file)
-    params(int nt, int tau, float rho);
+    params(int nt);
+
+    //setters
+    void setTau(int new_tau);
+    void setRho(float new_rho);
     
     // member function declarations (moved to .cpp) due to compiler issues
     int nxf();
